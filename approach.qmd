@@ -27,15 +27,15 @@ To explore this question, the project will analyze datasets containing job posti
 
 Our team will communicate primarily through WhatsApp group chat and school email to coordinate meetings, discuss progress, and share quick updates related to the project.
 
-**Code and File Sharing**
+#### **Code and File Sharing**
 
-A shared GitHub repository<https://github.com/MKudanova/Project3_DataScienceSkills/tree/main> will be used to store project code, scripts, and datasets.
+#### A shared GitHub repository<https://github.com/MKudanova/Project3_DataScienceSkills/tree/main> will be used to store project code, scripts, and datasets. 
 
-**Project Documentation**
+#### **Project Documentation**
 
 A shared Google Docs document will be used to collaboratively write project notes and draft written sections of the project before final versions are uploaded to the GitHub repository.
 
-### Data Sources
+#### Data Sources
 
 The data will most likely be obtained from Kaggle, a platform that hosts publicly available datasets. These datasets often contain job postings collected from major job platforms such as LinkedIn, Indeed, and Glassdoor. We may also explore other data sources such as BigQuery or the U.S. government open data portal if they provide relevant datasets.
 
