@@ -36,7 +36,7 @@ coordinate meetings, discuss progress, and share quick updates related to the pr
 
 #### Code and File Sharing:
 
-#### A shared GitHub repository<https://github.com/MKudanova/Project3_DataScienceSkills/tree/main> will be used to store project code, scripts, and datasets. 
+A shared GitHub **repository<https://github.com/MKudanova/Project3_DataScienceSkills/tree/main>** will be used to store project code, scripts, and datasets. 
 
 #### Project Documentation:
 
