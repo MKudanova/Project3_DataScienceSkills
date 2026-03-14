@@ -19,7 +19,7 @@ of skills listed in job postings will be used as a proxy for measuring the deman
 
 ## Approach
 
-#### Team members:
+#### Team members
 
 -   Madina Kudanova
 
@@ -29,28 +29,28 @@ of skills listed in job postings will be used as a proxy for measuring the deman
 
 -   Xiaofei Mei				
 
-#### Communication:
+#### Communication
 
 Our team will communicate primarily through WhatsApp group chat and school email to
 coordinate meetings, discuss progress, and share quick updates related to the project.
 
-#### Code and File Sharing:
+#### Code and File Sharing
 
-A shared GitHub **repository<https://github.com/MKudanova/Project3_DataScienceSkills/tree/main>** will be used to store project code, scripts, and datasets. 
+A shared GitHub repository <https://github.com/MKudanova/Project3_DataScienceSkills/tree/main> will be used to store project code, scripts, and datasets. 
 
-#### Project Documentation:
+#### Project Documentation
 
 A shared Google Docs document will be used to collaboratively write project notes and
 draft written sections of the project before final versions are uploaded to the GitHub repository.
 
-#### Data Sources:
+#### Data Sources
 
 The data will most likely be obtained from Kaggle, a platform that hosts publicly available 
 datasets. These datasets often contain job postings collected from major job platforms such
 as LinkedIn, Indeed, and Glassdoor. We may also explore other data sources such as BigQuery 
 or the U.S. government open data portal if they provide relevant datasets.
 
-#### Data Loading and Database Design:
+#### Data Loading and Database Design
 
 After obtaining the dataset, it will be downloaded in CSV format and loaded into a relational database.
 The database will follow a normalized structure to organize the data efficiently. Because one job 
@@ -60,11 +60,11 @@ might include three tables: Jobs (job_id, job_title, company, location), Skills 
 and Job_Skills (job_id, skill_id). The data will then be accessed from R for cleaning, tidying, and
 exploratory analysis. The database structure may be adjusted.
 
-#### ER Diagram:	
+#### ER Diagram	
 
 To document the structure of the database, the project will include an Entity–Relationship (ER) diagram
-illustrating the relationships between the tables in the normalized database. The ER diagram
-will represent the relationships between the jobs and skills tables and will highlight the relationship between them.\
+illustrating the relationships between the tables in the normalized database. It will represent the relationships
+between the jobs and skills tables.
 The diagram will most likely be created using a visual diagramming tool such as draw.io (diagrams.net) 
 or another diagram tool. The ER diagram may be refined after the dataset is examined and the 
 final database schema is implemented.
