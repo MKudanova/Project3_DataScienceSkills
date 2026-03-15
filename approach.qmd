@@ -59,7 +59,9 @@ the database will use a many-to-many relationship between jobs and skills. The i
 might include three tables: Jobs (job_id, job_title, company, location), Skills (skill_id, skill_name),
 and Job_Skills (job_id, skill_id). The data will then be accessed from R for cleaning, tidying, and
 exploratory analysis. The database structure may be adjusted.
-The relational database will be implemented using PostgreSQL, managed through pgAdmin. SQL scripts used to create the database schema, tables, and relationships will be included in the project’s GitHub repository to ensure reproducibility and transparency of the data loading process.
+The relational database will be implemented using PostgreSQL, managed through pgAdmin. 
+SQL scripts used to create the database schema, tables, and relationships will be included in 
+the project’s GitHub repository to ensure reproducibility and transparency of the data loading process.
 
 ### ER Diagram	
 
@@ -72,4 +74,8 @@ final database schema is implemented.
 
 ### Exploratory Analysis and Visualization
 
-After the data are cleaned and transformed in R, exploratory data analysis will be conducted to examine the frequency of different data science skills across job postings. Visualizations such as bar charts, frequency plots, and comparative graphs will be created to illustrate which programming languages, tools, and technologies appear most frequently in job listings. These visualizations will help communicate the relative demand for different data science skills in an intuitive and interpretable way.
+After the data are cleaned and transformed in R, exploratory data analysis will be conducted to examine 
+the frequency of different data science skills across job postings. Visualizations such as bar charts, 
+frequency plots, and comparative graphs will be created to illustrate which programming languages, tools, 
+and technologies appear most frequently in job listings. These visualizations will help communicate the 
+relative demand for different data science skills in an intuitive and interpretable way.
