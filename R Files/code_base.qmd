@@ -1,0 +1,304 @@
+---
+title: "Project3: Data Science Skills"
+author: "Madina Kudanova, Muhammad Khan, Leon Lin, Xiaofei Mei"
+format: html
+editor: visual
+---
+
+## Introduction
+
+The project Most Valued Data Science Skills aims to investigate which technical skills are most valued in the data science job market. As the demand for data science professionals has grown significantly over the last decade, it is important to understand which tools, programming languages, and analytical skills are most frequently required by employers.
+
+To explore this question, the project will analyze datasets containing job postings for data science related roles. Job postings provide insight into employer expectations because they typically list the technical skills required for each position. In this project, the frequency of skills listed in job postings will be used as a proxy for measuring the demand for specific data science skills.
+
+## Approach
+
+### Team members
+
+-   Madina Kudanova
+
+-   Muhammad Khan
+
+-   Leon Lin
+
+-   Xiaofei Mei
+
+### Communication
+
+Our team will communicate primarily through WhatsApp/Slack group chats and school email to coordinate meetings, discuss progress, and share quick updates related to the project.
+
+### Code and File Sharing
+
+A shared GitHub repository <https://github.com/MKudanova/Project3_DataScienceSkills/tree/main> will be used to store project code, scripts, and datasets.
+
+### Project Documentation
+
+A shared Google Docs document will be used to collaboratively write project notes and draft written sections of the project before final versions are uploaded to the GitHub repository.
+
+### Data Sources
+
+The data will most likely be obtained from Kaggle, a platform that hosts publicly available datasets. These datasets often contain job postings collected from major job platforms such as LinkedIn, Indeed, and Glassdoor. We may also explore other data sources such as BigQuery or the U.S. government open data portal if they provide relevant datasets.
+
+### Data Loading and Database Design
+
+After obtaining the dataset, it will be downloaded in CSV format and loaded into a relational database. The database will follow a normalized structure to organize the data efficiently. Because one job posting can require multiple skills and a single skill may appear in multiple job postings, the database will use a many-to-many relationship between jobs and skills. The initial design might include three tables: Jobs (job_id, job_title, company, location), Skills (skill_id, skill_name), and Job_Skills (job_id, skill_id). The data will then be accessed from R for cleaning, tidying, and exploratory analysis. The database structure may be adjusted. The relational database will be implemented using PostgreSQL, managed through pgAdmin. SQL scripts used to create the database schema, tables, and relationships will be included in the project’s GitHub repository to ensure reproducibility and transparency of the data loading process.
+
+### ER Diagram
+
+To document the structure of the database, the project will include an Entity–Relationship (ER) diagram illustrating the relationships between the tables in the normalized database. It will represent the relationships between the jobs and skills tables. The diagram will most likely be created using a visual diagramming tool such as draw.io (diagrams.net) or another diagram tool. The ER diagram may be refined after the dataset is examined and the final database schema is implemented.
+
+### Exploratory Analysis and Visualization
+
+After the data are cleaned and transformed in R, exploratory data analysis will be conducted to examine the frequency of different data science skills across job postings. Visualizations such as bar charts, frequency plots, and comparative graphs will be created to illustrate which programming languages, tools, and technologies appear most frequently in job listings. These visualizations will help communicate the relative demand for different data science skills in an intuitive and interpretable way.
+
+## Code base
+
+```{r setup, message=FALSE, warning=FALSE}
+# Load packages
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+### Load data tables representing the normalized database structure
+
+```{r load_data, message=FALSE}
+# jobs (job-level information), 
+jobs <- read_csv("https://raw.githubusercontent.com/MKudanova/Project3_DataScienceSkills/refs/heads/main/DATA/Extra/jobs.csv")
+
+# skills (unique skill list)
+skills <- read_csv("https://raw.githubusercontent.com/MKudanova/Project3_DataScienceSkills/refs/heads/main/DATA/processed/skills_updated.csv")
+
+#job_skills (mapping between jobs and skills)
+job_skills <- read_csv("https://raw.githubusercontent.com/MKudanova/Project3_DataScienceSkills/refs/heads/main/DATA/processed/job_skills_updated.csv")
+
+```
+
+### Data Preview and Validation
+
+```{r}
+glimpse(jobs)
+
+```
+
+```{r}
+kable(skills, caption = "Skill Table") %>% kable_styling(full_width = FALSE)
+```
+
+```{r}
+kable(head(job_skills), caption = "Job + Skills Table") %>% kable_styling(full_width = FALSE)
+```
+
+### Data Preparation and Missing Value Check
+
+```{r}
+# Join job-skill mapping with skill names to create a readable dataset
+job_skill_named <- job_skills %>%
+  left_join(skills, by = "skill_id")
+
+# checking for missing values
+sum(is.na(job_skill_named$skill_name))
+```
+
+### Skill Demand Analysis 
+
+```{r}
+# Count how frequently each skill appears across all job postings
+skill_counts_df <- job_skill_named %>%
+  count(skill_name, sort = TRUE)
+
+# Display the most in-demand skills ranked by frequency
+skill_counts_df
+```
+
+### Visualization of Skill Demand
+
+```{r}
+# Plot the frequency of each skill across all job postings
+ggplot(skill_counts_df, aes(x = reorder(skill_name, n), y = n)) +
+  geom_col(fill = "orange") +
+  coord_flip() +
+  theme_minimal() +
+  labs(title = "                                  Most In-Demand Skills  ", x = " Skills ", y = "
+       Skill Popularity")
+```
+
+### Skill Demand Across Salary Levels
+
+```{r}
+# Inspect the salary_estimate column to understand its structure and values
+head(jobs$salary_estimate)
+
+# Extract and sort unique salary ranges to identify available salary groupings
+sort(unique(jobs$salary_estimate))
+
+
+```
+
+### Combine Jobs, Skills, and Salary Data
+
+```{r}
+# Join job_skills with jobs to attach salary information to each job
+# Then join with skills to map skill IDs to readable skill names
+job_skill_salary <- job_skills %>%
+  left_join(jobs, by = "job_id") %>%
+  left_join(skills, by = "skill_id")
+
+
+```
+
+### Filter Salary Ranges and Compute Top Skills
+
+```{r}
+# Identify the most common salary ranges to ensure sufficient data for comparison
+top_ranges <- jobs %>%
+  count(salary_estimate, sort = TRUE) %>%
+  slice_head(n = 6) %>%
+  pull(salary_estimate)
+
+# Join jobs and skills, filter to the selected salary ranges,
+# and count how frequently each skill appears within each range
+top_skills_by_salary <- job_skills %>%
+  left_join(jobs, by = "job_id") %>%
+  left_join(skills, by = "skill_id") %>%
+  filter(salary_estimate %in% top_ranges) %>%
+  count(salary_estimate, skill_name, sort = TRUE) %>%
+
+  # Within each salary range, select the top 4 most frequent skills
+  group_by(salary_estimate) %>%
+  slice_max(n, n = 4, with_ties = FALSE) %>%
+
+  # Remove grouping for clean output or further analysis
+  ungroup()
+
+# Display the most in-demand skills across different salary ranges
+top_skills_by_salary
+```
+
+### Visualize the top 4 most frequent skills within each selected salary range
+
+```{r}
+ggplot(top_skills_by_salary,
+       aes(x = reorder(skill_name, n), y = n)) +
+
+  # Create bar chart to show skill frequency
+  geom_col(fill = "darkgreen") +
+
+  # Flip axes for better readability of skill names
+  coord_flip() +
+
+  # Split the plot by salary range for comparison across groups
+  facet_wrap(~ salary_estimate, scales = "free_y") +
+
+  # Apply a minimal theme for a clean layout
+  theme_minimal() +
+
+  # Add title and axis labels
+  labs(
+    title = "    Top 4 Skills in the Most Common Salary Ranges",
+    x = "Skill",
+    y = "Count"
+  ) +
+
+  # Emphasize title and facet labels
+  theme(
+    plot.title = element_text(face = "bold"),
+    strip.text = element_text(face = "bold")
+  )
+```
+
+## Skill Demand by Sector
+
+### Identify Top Sectors
+
+```{r}
+# Filter out missing or undefined sector values,
+# then count and select the most represented sectors
+top_sectors <- jobs %>%
+  filter(sector != "-1", !is.na(sector)) %>%
+
+  # Count number of job postings per sector and sort descending
+  count(sector, sort = TRUE) %>%
+
+  # Keep the top 4 sectors with the highest number of postings
+  slice_head(n = 4)
+
+
+```
+
+```{r}
+# Filter the combined dataset to include only the most represented sectors
+job_skill_sector <- job_skill_salary %>%
+  filter(sector %in% top_sectors$sector)
+```
+
+#### Compute Top Skills by Sector
+
+```{r}
+# Count how frequently each skill appears within each sector
+top_skills_by_sector <- job_skill_sector %>%
+  count(sector, skill_name, sort = TRUE) %>%
+
+  # Within each sector, select the top 4 most frequent skills
+  group_by(sector) %>%
+  slice_max(n, n = 4, with_ties = FALSE) %>%
+
+  # Remove grouping for clean output or further analysis
+  ungroup()
+
+# Display the most in-demand skills across selected sectors
+top_skills_by_sector
+```
+
+#### Sector Distribution
+
+```{r}
+# Calculate the distribution of job postings across sectors
+sector_ratio <- jobs %>%
+  filter(sector != "-1", !is.na(sector)) %>%   # Remove invalid or missing sector values
+  count(sector) %>%                           # Count number of jobs per sector
+  mutate(percentage = n / sum(n) * 100)       # Convert counts to percentages
+
+# Round percentages and keep only relevant columns for reporting
+sector_ratio_clean <- sector_ratio %>%
+  mutate(percentage = round(percentage, 0)) %>%
+  select(sector, percentage)
+
+# Sort sectors from highest to lowest representation
+sector_ratio_clean %>%
+  arrange(desc(percentage))
+```
+
+#### Visualize the top skills within each of the most represented sectors
+
+```{r}
+ggplot(top_skills_by_sector,
+       aes(x = reorder(skill_name, n), y = n)) +
+
+  # Create bar chart to show skill frequency
+  geom_col() +
+
+  # Flip axes for better readability of skill names
+  coord_flip() +
+
+  # Split the plot by sector to compare skill patterns across industries
+  facet_wrap(~ sector, scales = "free_y") +
+
+  # Add title and axis labels
+  labs(
+    title = "Top Skills Across Leading Job Sectors",
+    x = "Skill",
+    y = "Count"
+  ) +
+
+  # Apply a minimal theme for a clean layout
+  theme_minimal()
+```
+
+## Conclusion
+
+Based on the Glassdoor dataset analyzed, which was transformed into a relational database using SQL, core data science skills, particularly Python, SQL, machine learning, and statistical analysis, consistently emerge as the most in-demand. These skills appear across all salary ranges and industry sectors represented in the dataset, indicating that their value is stable and widely recognized regardless of role or domain
+
+While these core skills dominate, other tools such as R and Excel appear more context-dependent. R is present in the dataset but does not consistently rank among the top skills across salary levels or sectors, suggesting it is more specialized. Excel, on the other hand, appears more frequently in business-oriented roles and lower to mid salary ranges, indicating its role as a supporting tool rather than a core technical requirement.
+
+Overall, the findings suggest that a strong foundation in key programming and analytical skills forms a reliable “value pack” for data scientists. This core skill set remains relevant from entry-level to senior positions, while additional tools contribute to specialization depending on industry and role requirements.
