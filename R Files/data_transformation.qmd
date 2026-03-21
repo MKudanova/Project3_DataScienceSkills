@@ -1,0 +1,103 @@
+---
+title: "Project3 Data Transformation Part"
+author: "Muhammad Suffyan Khan"
+format: html
+editor: visual
+---
+
+```{r}
+library(readr)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(janitor)
+
+# 1. Read raw dataset from GitHub
+jobs_raw <- read_csv(
+  "https://raw.githubusercontent.com/MKudanova/Project3_DataScienceSkills/refs/heads/main/DATA/jobsFromGlassdoor.csv"
+)
+
+# 2. Clean column names
+jobs_raw <- jobs_raw %>%
+  clean_names()
+
+# 3. Add job_id
+jobs_raw <- jobs_raw %>%
+  mutate(job_id = row_number()) %>%
+  relocate(job_id)
+
+# 4. Basic cleaning for jobs table
+jobs <- jobs_raw %>%
+  mutate(
+    company_name = str_squish(company_name),
+    job_title = str_squish(job_title),
+    location = str_squish(location),
+    industry = str_squish(industry),
+    sector = str_squish(sector),
+    revenue = str_squish(revenue),
+    type_of_ownership = str_squish(type_of_ownership),
+    job_simp = str_squish(job_simp)
+  ) %>%
+  distinct()
+
+# 5. Define skill columns already present in dataset
+skill_cols <- c("python", "excel", "hadoop", "spark", "aws", "tableau", "big_data")
+
+# 6. Create skills table
+skills <- tibble(
+  skill_name = skill_cols
+) %>%
+  mutate(skill_id = row_number()) %>%
+  select(skill_id, skill_name)
+
+# 7. Create job_skills table by pivoting wide -> long
+job_skills <- jobs %>%
+  select(job_id, all_of(skill_cols)) %>%
+  pivot_longer(
+    cols = -job_id,
+    names_to = "skill_name",
+    values_to = "present"
+  ) %>%
+  filter(present == 1) %>%
+  select(-present) %>%
+  left_join(skills, by = "skill_name") %>%
+  select(job_id, skill_id) %>%
+  arrange(job_id, skill_id)
+
+# 8. Final jobs table without wide skill columns + remove extra columns
+jobs_table <- jobs %>%
+  select(
+    -all_of(skill_cols),
+    -seniority,
+    -headquarters,
+    -size,
+    -same_state,
+    -salary_estimate,
+    -job_description,
+    -revenue
+  )
+
+# 10. Write transformed CSVs
+write_csv(jobs_table, "jobs_updated.csv")
+write_csv(skills, "skills.csv")
+write_csv(job_skills, "job_skills.csv")
+
+##Ignore Skills.csv and job_skills.csv created files as result of this code as Madina updated those data files. 
+
+# 11. Quick checks
+cat("Jobs rows:", nrow(jobs_table), "\n")
+cat("Skills rows:", nrow(skills), "\n")
+cat("Job_Skills rows:", nrow(job_skills), "\n")
+
+head(jobs_table)
+head(skills)
+head(job_skills)
+```
+
+This will give the 3 normalized files:
+
+-   `jobs_updated.csv`
+-   `skills.csv`
+-   `job_skills.csv`
+
+
