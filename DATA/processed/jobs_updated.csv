@@ -1,0 +1,661 @@
+job_id,job_title,rating,company_name,location,type_of_ownership,industry,sector,min_salary,max_salary,avg_salary,job_state,company_age,job_simp
+1,Sr Data Scientist,3.1,Healthfirst,"New York, NY",Nonprofit Organization,Insurance Carriers,Insurance,137,171,154,NY,27,data scientist
+2,Data Scientist,4.2,ManTech,"Chantilly, VA",Company - Public,Research & Development,Business Services,137,171,154,VA,52,data scientist
+3,Data Scientist,3.8,Analysis Group,"Boston, MA",Private Practice / Firm,Consulting,Business Services,137,171,154,MA,39,data scientist
+4,Data Scientist,3.5,INFICON,"Newton, MA",Company - Public,Electrical & Electronic Manufacturing,Manufacturing,137,171,154,MA,20,data scientist
+5,Data Scientist,2.9,Affinity Solutions,"New York, NY",Company - Private,Advertising & Marketing,Business Services,137,171,154,NY,22,data scientist
+6,Data Scientist,4.2,HG Insights,"Santa Barbara, CA",Company - Private,Computer Hardware & Software,Information Technology,137,171,154,CA,10,data scientist
+7,Data Scientist / Machine Learning Expert,3.9,Novartis,"Cambridge, MA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,137,171,154,MA,24,data scientist
+8,Data Scientist,3.5,iRobot,"Bedford, MA",Company - Public,Consumer Electronics & Appliances Stores,Retail,137,171,154,MA,30,data scientist
+9,Staff Data Scientist - Analytics,4.4,Intuit - Data,"San Diego, CA",Company - Public,Computer Hardware & Software,Information Technology,137,171,154,CA,37,data scientist
+10,Data Scientist,3.6,XSELL Technologies,"Chicago, IL",Company - Private,Enterprise Software & Network Solutions,Information Technology,137,171,154,IL,6,data scientist
+11,Data Scientist,4.5,Novetta,"Herndon, VA",Company - Private,Enterprise Software & Network Solutions,Information Technology,137,171,154,VA,8,data scientist
+12,Data Scientist,4.7,1904labs,"Saint Louis, MO",Company - Private,IT Services,Information Technology,137,171,154,MO,4,data scientist
+13,"Data Scientist - Statistics, Early Career",3.7,PNNL,"Richland, WA",Government,Energy,"Oil, Gas, Energy & Utilities",137,171,154,WA,55,data scientist
+14,Data Modeler,3.1,Old World Industries,"Northbrook, IL",Company - Private,Chemical Manufacturing,Manufacturing,137,171,154,IL,47,na
+15,Data Scientist,3.4,Mathematica Policy Research,"Washington, DC",Company - Private,Consulting,Business Services,137,171,154,DC,34,data scientist
+16,Experienced Data Scientist,4.4,Guzman & Griffin Technologies (GGTI),"Washington, DC",Company - Private,Federal Agencies,Government,137,171,154,DC,23,data scientist
+17,Data Scientist,3.5,Buckman,"Memphis, TN",Company - Private,Chemical Manufacturing,Manufacturing,137,171,154,TN,75,data scientist
+18,Data Analyst II,4.2,"Insight Enterprises, Inc.","Plano, TX",Company - Public,Enterprise Software & Network Solutions,Information Technology,137,171,154,TX,32,analyst
+19,Medical Lab Scientist,3.5,Tower Health,"West Grove, PA",Nonprofit Organization,Health Care Services & Hospitals,Health Care,137,171,154,PA,3,na
+20,Data Scientist,3.2,Triplebyte,"New York, NY",Company - Private,Computer Hardware & Software,Information Technology,137,171,154,NY,5,data scientist
+21,Data Scientist/Machine Learning,4.3,PulsePoint,"New York, NY",Company - Private,Internet,Information Technology,137,171,154,NY,9,data scientist
+22,Human Factors Scientist,3.5,Exponent,"Phoenix, AZ",Company - Public,Consulting,Business Services,137,171,154,AZ,53,na
+23,Business Intelligence Analyst I- Data Insights,3.5,Guardian Life,"Appleton, WI",Company - Private,Insurance Carriers,Insurance,137,171,154,WI,160,analyst
+24,Data Scientist,3.4,Spectrum Communications and Consulting,"Chicago, IL",Company - Private,Advertising & Marketing,Business Services,137,171,154,IL,28,data scientist
+25,Data Scientist,4.7,Oversight Systems,"Atlanta, GA",Company - Private,Computer Hardware & Software,Information Technology,137,171,154,GA,17,data scientist
+26,Data Scientist - Risk,4.2,LSQ,"Orlando, FL",Company - Private,Investment Banking & Asset Management,Finance,137,171,154,FL,24,data scientist
+27,Data Scientist-Human Resources,3.8,MIT Lincoln Laboratory,"Lexington, MA",Nonprofit Organization,Aerospace & Defense,Aerospace & Defense,137,171,154,MA,69,data scientist
+28,Data Scientist,4.5,Kingfisher Systems,"McLean, VA",Company - Private,Federal Agencies,Government,137,171,154,VA,15,data scientist
+29,Data Scientist,2.8,Formation,"San Francisco, CA",Company - Private,Enterprise Software & Network Solutions,Information Technology,137,171,154,CA,5,data scientist
+30,Data Scientist,3.8,Analysis Group,"Boston, MA",Private Practice / Firm,Consulting,Business Services,75,131,103,MA,39,data scientist
+31,Data Scientist / Machine Learning Expert,3.9,Novartis,"Cambridge, MA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,75,131,103,MA,24,data scientist
+32,Data Scientist,5,Cohere Health,"Boston, MA",Company - Private,IT Services,Information Technology,75,131,103,MA,1,data scientist
+33,Senior Research Statistician- Data Scientist,4.8,Acuity Insurance,"Sheboygan, WI",Company - Private,Insurance Carriers,Insurance,75,131,103,WI,95,data scientist
+34,Data Engineer,3.6,Chef,United States,Company - Private,Enterprise Software & Network Solutions,Information Technology,75,131,103,US,12,data engineer
+35,Associate Data Scientist,3.3,Puget Sound Energy,"Bothell, WA",Company - Private,Utilities,"Oil, Gas, Energy & Utilities",75,131,103,WA,21,data scientist
+36,Business Intelligence Analyst,2.7,Sandhills Global,"Lincoln, NE",Company - Private,Enterprise Software & Network Solutions,Information Technology,75,131,103,NE,42,analyst
+37,Data Scientist,2.7,A Place for Mom,"Overland Park, KS",Company - Private,Health Care Services & Hospitals,Health Care,75,131,103,KS,20,data scientist
+38,Data Scientist,2.2,Great-Circle Technologies,"Chantilly, VA",Company - Private,Enterprise Software & Network Solutions,Information Technology,75,131,103,VA,20,data scientist
+39,Senior Analyst/Data Scientist,3.4,Edmunds.com,"Santa Monica, CA",Company - Private,Internet,Information Technology,75,131,103,CA,54,data scientist
+40,Data Analyst,3.1,"Cambridge Associates, LLC","Boston, MA",Company - Private,Investment Banking & Asset Management,Finance,75,131,103,MA,47,analyst
+41,Machine Learning Engineer,3.4,Liberty Mutual Insurance,"Portsmouth, NH",Company - Private,Insurance Carriers,Insurance,75,131,103,NH,108,mle
+42,Data Analyst I,2.6,Cenlar,"Ewing, NJ",Company - Private,-1,-1,75,131,103,NJ,62,analyst
+43,Scientist - Molecular Biology,5,Arsenal Biosciences,"South San Francisco, CA",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,75,131,103,CA,1,na
+44,Data Scientist,4.2,Eversight,"Palo Alto, CA",Company - Private,Enterprise Software & Network Solutions,Information Technology,75,131,103,CA,7,data scientist
+45,"Computational Scientist, Machine Learning",4.1,Pfizer,"Cambridge, MA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,75,131,103,MA,171,mle
+46,Senior Data Scientist,4.8,Klaviyo,"Boston, MA",Company - Private,Computer Hardware & Software,Information Technology,75,131,103,MA,8,data scientist
+47,Data Scientist,3.3,Intellectual Ventures,"Bellevue, WA",Company - Private,Investment Banking & Asset Management,Finance,75,131,103,WA,20,data scientist
+48,Data Scientist,3.7,GovTech,"San Francisco, CA",Government,Federal Agencies,Government,75,131,103,CA,4,data scientist
+49,Data Scientist,4.3,Quick Base,"Cambridge, MA",Company - Private,Enterprise Software & Network Solutions,Information Technology,75,131,103,MA,21,data scientist
+50,Data Analyst,4.8,Giving Assistant,"San Francisco, CA",Company - Private,Advertising & Marketing,Business Services,75,131,103,CA,6,analyst
+51,Data Scientist,3.7,Takeda,"Cambridge, MA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,75,131,103,MA,239,data scientist
+52,Data Scientist,4,Netskope,"San Francisco, CA",Company - Private,Enterprise Software & Network Solutions,Information Technology,75,131,103,CA,8,data scientist
+53,E-Commerce Data Analyst,3.5,iSeatz,"New Orleans, LA",Company - Private,Enterprise Software & Network Solutions,Information Technology,75,131,103,LA,21,analyst
+54,Data Analytics Engineer,3.7,Summa Health System,"Akron, OH",Nonprofit Organization,Health Care Services & Hospitals,Health Care,75,131,103,OH,94,na
+55,Senior Data Scientist,3.5,Benson Hill,"Saint Louis, MO",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,75,131,103,MO,8,data scientist
+56,Product Data Scientist - Ads Data Science,4.1,Twitter,"San Francisco, CA",Company - Public,Internet,Information Technology,75,131,103,CA,14,data scientist
+57,Data Scientist,3.2,Postmates - Corporate HQ,"San Francisco, CA",Company - Private,Express Delivery Services,Transportation & Logistics,75,131,103,CA,9,data scientist
+58,Data Scientist - Intermediate,4.5,Envision LLC,"Saint Louis, MO",Company - Private,Staffing & Outsourcing,Business Services,75,131,103,MO,26,data scientist
+59,Data Analyst,3.8,Swiss Re,"Fort Wayne, IN",Company - Public,Insurance Agencies & Brokerages,Insurance,75,131,103,IN,157,analyst
+60,Machine Learning Engineer,4.5,Systems & Technology Research,"Woburn, MA",Company - Private,Aerospace & Defense,Aerospace & Defense,75,131,103,MA,10,mle
+61,Data Scientist,3.5,iRobot,"Bedford, MA",Company - Public,Consumer Electronics & Appliances Stores,Retail,79,131,105,MA,30,data scientist
+62,Data Scientist,4.2,HG Insights,"Santa Barbara, CA",Company - Private,Computer Hardware & Software,Information Technology,79,131,105,CA,10,data scientist
+63,Global Data Analyst,3.8,Dermalogica,"Carson, CA",Subsidiary or Business Segment,Consumer Products Manufacturing,Manufacturing,79,131,105,CA,34,analyst
+64,Data Engineer,3.7,Bayview Asset Management,"Coral Gables, FL",Company - Private,Investment Banking & Asset Management,Finance,79,131,105,FL,25,data engineer
+65,Data Scientist,3.7,Via Transportation,"New York, NY",Company - Private,Internet,Information Technology,79,131,105,NY,8,data scientist
+66,Data Scientist,4,Grid Dynamics,"Santa Clara, CA",Company - Private,Enterprise Software & Network Solutions,Information Technology,79,131,105,CA,14,data scientist
+67,Data & Machine Learning Scientist,3.3,Tempus Labs,"Chicago, IL",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,79,131,105,IL,5,mle
+68,Data Scientist - Machine Learning,2.5,CareDx,"Brisbane, CA",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,79,131,105,CA,-1,data scientist
+69,Data Engineer (Remote),4.2,IZEA,"Winter Park, FL",Company - Public,Advertising & Marketing,Business Services,79,131,105,FL,14,data engineer
+70,"Data Scientist, Applied Machine Learning - Bay Area",3.3,Tempus Labs,"Redwood City, CA",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,79,131,105,CA,5,data scientist
+71,Principal Data Scientist,4,Autodesk,"San Francisco, CA",Company - Public,Computer Hardware & Software,Information Technology,79,131,105,CA,38,data scientist
+72,Business Data Analyst,3.7,Caterpillar,"Peoria, IL",Company - Public,Industrial Manufacturing,Manufacturing,79,131,105,IL,95,analyst
+73,Purification Scientist,4.9,New England Biolabs,"Ipswich, MA",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,79,131,105,MA,46,na
+74,Data Analyst,3.4,Allied Solutions,"Carmel, IN",Subsidiary or Business Segment,Insurance Agencies & Brokerages,Insurance,79,131,105,IN,19,analyst
+75,"Data Engineer, Enterprise Analytics",3.1,Healthfirst,"New York, NY",Nonprofit Organization,Insurance Carriers,Insurance,79,131,105,NY,27,data engineer
+76,Data Scientist,3.5,The Knot Worldwide,"Washington, DC",Company - Private,Internet,Information Technology,79,131,105,DC,1,data scientist
+77,Data Scientist,2.9,IFG Companies,"New York, NY",Company - Private,Insurance Carriers,Insurance,79,131,105,NY,35,data scientist
+78,Data Scientist 3 (718),3.3,Amyris,"Emeryville, CA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,79,131,105,CA,17,data scientist
+79,"Real World Science, Data Scientist",4,AstraZeneca,"Gaithersburg, MD",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,79,131,105,MD,107,data scientist
+80,Data Scientist,3.6,Powertek,"Washington, DC",Company - Private,IT Services,Information Technology,79,131,105,DC,19,data scientist
+81,Data Engineer,4.7,Object Partners,"Saint Louis, MO",Company - Private,Consulting,Business Services,79,131,105,MO,24,data engineer
+82,Data Scientist - Image and Video Analytics,4.9,The Mom Project,"Longmont, CO",Company - Private,Staffing & Outsourcing,Business Services,79,131,105,CO,4,data scientist
+83,Data Scientist,4.3,Lightspeed Systems,"Austin, TX",Company - Private,Computer Hardware & Software,Information Technology,79,131,105,TX,21,data scientist
+84,"Data Science Manager, Payment Acceptance - USA",4,Stripe,"San Francisco, CA",Company - Private,Internet,Information Technology,79,131,105,CA,10,manager
+85,Data Analyst,2.6,Comprehensive Healthcare,"Yakima, WA",Nonprofit Organization,Health Care Services & Hospitals,Health Care,79,131,105,WA,49,analyst
+86,Data Scientist / Applied Mathematician,4.5,"Fullpower Technologies, Inc.","Santa Cruz, CA",Company - Private,Computer Hardware & Software,Information Technology,79,131,105,CA,17,data scientist
+87,Machine Learning Engineer,4.8,Klaviyo,"Boston, MA",Company - Private,Computer Hardware & Software,Information Technology,79,131,105,MA,8,mle
+88,Data Scientist,3.9,Mars,United States,Company - Private,Food & Beverage Manufacturing,Manufacturing,79,131,105,US,109,data scientist
+89,Patient Safety- Associate Data Scientist,4,AstraZeneca,"Gaithersburg, MD",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,79,131,105,MD,107,data scientist
+90,Machine Learning Engineer,4.4,NuWave Solutions,"Springfield, VA",Company - Private,IT Services,Information Technology,79,131,105,VA,21,mle
+91,Senior Data Scientist,4.2,ManTech,"Alexandria, VA",Company - Public,Research & Development,Business Services,79,131,105,VA,52,data scientist
+92,Data Scientist,3.4,Mathematica Policy Research,"Washington, DC",Company - Private,Consulting,Business Services,99,132,115,DC,34,data scientist
+93,Staff Data Scientist - Analytics,4.4,Intuit - Data,"San Diego, CA",Company - Public,Computer Hardware & Software,Information Technology,99,132,115,CA,37,data scientist
+94,Data Analytics Engineer,3.5,QOMPLX,"Reston, VA",Company - Private,Enterprise Software & Network Solutions,Information Technology,99,132,115,VA,5,na
+95,"Data Scientist, Kinship - NYC/Portland",3.9,Mars,"New York, NY",Company - Private,Food & Beverage Manufacturing,Manufacturing,99,132,115,NY,109,data scientist
+96,Senior Data Scientist,3.8,GutCheck,"Denver, CO",Company - Private,Advertising & Marketing,Business Services,99,132,115,CO,11,data scientist
+97,Applied Technology Researcher / Data Scientist,3.5,Inter-American Development Bank,"Washington, DC",Other Organization,Banks & Credit Unions,Finance,99,132,115,DC,61,data scientist
+98,Machine Learning Engineer,4.4,Stratagem Group,"Aurora, CO",Company - Private,Aerospace & Defense,Aerospace & Defense,99,132,115,CO,13,mle
+99,Health Data Scientist - Biomedical/Biostats,4.1,Evidation,"Santa Barbara, CA",Company - Private,Internet,Information Technology,99,132,115,CA,8,data scientist
+100,Senior Data Scientist,4,Autodesk,"San Francisco, CA",Company - Public,Computer Hardware & Software,Information Technology,99,132,115,CA,38,data scientist
+101,Staff Data Scientist,4.4,Intuit - Data,"San Diego, CA",Company - Public,Computer Hardware & Software,Information Technology,99,132,115,CA,37,data scientist
+102,Data Scientist,3.8,Tecolote Research,"Hill AFB, UT",Company - Private,Aerospace & Defense,Aerospace & Defense,99,132,115,UT,47,data scientist
+103,Sr Data Engineer (Sr BI Developer),3.2,Tivity Health,"Chandler, AZ",Company - Public,Health Care Services & Hospitals,Health Care,99,132,115,AZ,39,data engineer
+104,Data Engineer,2.9,hc1,"Indianapolis, IN",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,99,132,115,IN,9,data engineer
+105,Lead Data Scientist,4.1,HP Inc.,"San Diego, CA",Company - Public,Computer Hardware & Software,Information Technology,99,132,115,CA,81,data scientist
+106,Data Scientist,3.7,SAIC,"Chantilly, VA",Company - Public,Enterprise Software & Network Solutions,Information Technology,99,132,115,VA,7,data scientist
+107,RFP Data Analyst,3.2,AllianceBernstein,"Nashville, TN",Company - Public,Investment Banking & Asset Management,Finance,99,132,115,TN,53,analyst
+108,Data Analyst,4.9,Big Huge Games,"Timonium, MD",Subsidiary or Business Segment,Video Games,Media,99,132,115,MD,7,analyst
+109,Data Scientist (TS/SCI),3.5,Maxar Technologies,"Herndon, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,99,132,115,VA,-1,data scientist
+110,Data Engineer,5,Phantom AI,"Burlingame, CA",Company - Private,Computer Hardware & Software,Information Technology,99,132,115,CA,4,data engineer
+111,Data Scientist,4,Noblis,"Reston, VA",Nonprofit Organization,Consulting,Business Services,99,132,115,VA,24,data scientist
+112,Data Scientist,3.6,Spring Health,"New York, NY",Company - Private,Health Care Services & Hospitals,Health Care,99,132,115,NY,4,data scientist
+113,Software Engineer - Data Science,4,ClearEdge,"Annapolis Junction, MD",Company - Private,Computer Hardware & Software,Information Technology,99,132,115,MD,18,na
+114,Data Analyst/Engineer,3.2,AllianceBernstein,"Nashville, TN",Company - Public,Investment Banking & Asset Management,Finance,99,132,115,TN,53,analyst
+115,NGS Scientist,5,Arsenal Biosciences,"South San Francisco, CA",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,99,132,115,CA,1,na
+116,Data Engineer,4.8,GetWellNetwork,"Bethesda, MD",Company - Private,Health Care Services & Hospitals,Health Care,99,132,115,MD,20,data engineer
+117,Data Scientist,4.5,TACG Solutions,"Dayton, OH",Company - Private,Consulting,Business Services,99,132,115,OH,14,data scientist
+118,Senior Data Engineer,4.7,Scoop,"San Francisco, CA",Company - Private,Internet,Information Technology,99,132,115,CA,5,data engineer
+119,Senior Data Scientist,4.5,Novetta,"Herndon, VA",Company - Private,Enterprise Software & Network Solutions,Information Technology,99,132,115,VA,8,data scientist
+120,Data Engineer,4.2,IZEA,"Winter Park, FL",Company - Public,Advertising & Marketing,Business Services,99,132,115,FL,14,data engineer
+121,Business Intelligence Analyst,3.4,Montway Inc,"Schaumburg, IL",Company - Private,Shipping,Transportation & Logistics,99,132,115,IL,14,analyst
+122,Sr. ML/Data Scientist - AI/NLP/Chatbot,3.8,Juniper Networks,"Cupertino, CA",Company - Public,Telecommunications Services,Telecommunications,99,132,115,CA,24,data scientist
+123,Data Scientist,4.7,1904labs,"Saint Louis, MO",Company - Private,IT Services,Information Technology,90,109,99,MO,4,data scientist
+124,Data Scientist,3.6,XSELL Technologies,"Chicago, IL",Company - Private,Enterprise Software & Network Solutions,Information Technology,90,109,99,IL,6,data scientist
+125,Data Engineer,4.2,IZEA,"Winter Park, FL",Company - Public,Advertising & Marketing,Business Services,90,109,99,FL,14,data engineer
+126,Sr. ML/Data Scientist - AI/NLP/Chatbot,3.8,Juniper Networks,"Cupertino, CA",Company - Public,Telecommunications Services,Telecommunications,90,109,99,CA,24,data scientist
+127,Data Scientist,5,Notion Labs,"San Francisco, CA",Company - Private,Enterprise Software & Network Solutions,Information Technology,90,109,99,CA,4,data scientist
+128,Senior Data Engineer,4.9,Lendio,"Lehi, UT",Company - Private,Lending,Finance,90,109,99,UT,9,data engineer
+129,Data Engineer,4.4,Direct Agents,"Culver City, CA",Company - Private,Advertising & Marketing,Business Services,90,109,99,CA,17,data engineer
+130,Data Scientist,3.3,NAVEX Global,"Lake Oswego, OR",Company - Private,Computer Hardware & Software,Information Technology,90,109,99,OR,8,data scientist
+131,Senior Data Engineer,4.9,Lendio,"Lehi, UT",Company - Private,Lending,Finance,90,109,99,UT,9,data engineer
+132,Data Scientist,4.2,Upstart,"San Mateo, CA",Company - Private,Lending,Finance,90,109,99,CA,8,data scientist
+133,Data Analyst,4.5,Envision LLC,"San Francisco, CA",Company - Private,Staffing & Outsourcing,Business Services,90,109,99,CA,26,analyst
+134,Data Engineer,4.8,AppLovin,"Palo Alto, CA",Company - Private,Video Games,Media,90,109,99,CA,8,data engineer
+135,Data Integration and Modeling Engineer,3.8,ISO New England,"Holyoke, MA",Nonprofit Organization,Utilities,"Oil, Gas, Energy & Utilities",90,109,99,MA,23,na
+136,Tableau Data Engineer 20-0117,3.7,Relativity,"Chicago, IL",Company - Private,Enterprise Software & Network Solutions,Information Technology,90,109,99,IL,19,data engineer
+137,Senior Data Scientist,3.3,Tempo Automation,"San Francisco, CA",Company - Private,Electrical & Electronic Manufacturing,Manufacturing,90,109,99,CA,7,data scientist
+138,AI Data Scientist,3.3,MITRE,"McLean, VA",Nonprofit Organization,Federal Agencies,Government,90,109,99,VA,62,data scientist
+139,Machine Learning Engineer,5,"Expedition Technology, Inc.","Herndon, VA",Company - Private,Aerospace & Defense,Aerospace & Defense,90,109,99,VA,7,mle
+140,Research Scientist Patient Preferences (Remote),3.8,Evidera,"Bethesda, MD",Subsidiary or Business Segment,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,90,109,99,MD,7,na
+141,Data Scientist,3.4,Plymouth Rock Assurance,"Woodbridge, NJ",Company - Private,Insurance Carriers,Insurance,90,109,99,NJ,38,data scientist
+142,Scientist - Biomarker and Flow Cytometry,2.4,Crown Bioscience,"San Diego, CA",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,90,109,99,CA,14,na
+143,Data Scientist,2.9,GNS Healthcare,"Cambridge, MA",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,90,109,99,MA,20,data scientist
+144,Analytics Manager,4.4,OneMagnify,"Dearborn, MI",Company - Private,Advertising & Marketing,Business Services,90,109,99,MI,53,manager
+145,Data Scientist,2.9,SPECTRUM,"Maryland Heights, MO",Subsidiary or Business Segment,"Cable, Internet & Telephone Providers",Telecommunications,90,109,99,MO,4,data scientist
+146,Staff Scientist- Upstream PD,2.7,Advanced BioScience Laboratories,"Rockville, MD",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,90,109,99,MD,59,na
+147,Data Engineer,4.2,Procore Technologies,"Carpinteria, CA",Company - Private,Computer Hardware & Software,Information Technology,90,109,99,CA,18,data engineer
+148,Sr Scientist - Extractables & Leachables,3.5,Ritedose,"Columbia, SC",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,90,109,99,SC,25,na
+149,ELISA RESEARCH SCIENTIST (CV-15),0,Covid-19 Search Partners,"Hauppauge, NY",-1,-1,-1,90,109,99,NY,-1,na
+150,Sr Data Scientist,4.2,bioMérieux,"Saint Louis, MO",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,90,109,99,MO,57,data scientist
+151,Data Scientist,4.5,Novetta,"Herndon, VA",Company - Private,Enterprise Software & Network Solutions,Information Technology,101,165,133,VA,8,data scientist
+152,Experienced Data Scientist,4.4,Guzman & Griffin Technologies (GGTI),"Washington, DC",Company - Private,Federal Agencies,Government,101,165,133,DC,23,data scientist
+153,Machine Learning Engineer,0,Radical Convergence,"Reston, VA",-1,-1,-1,101,165,133,VA,-1,mle
+154,Data Scientist,3.5,Leidos,"Fort Meade, MD",Company - Public,Aerospace & Defense,Aerospace & Defense,101,165,133,MD,51,data scientist
+155,Data Scientist,4.5,Demandbase,"San Francisco, CA",Company - Private,Computer Hardware & Software,Information Technology,101,165,133,CA,14,data scientist
+156,Say Business Data Analyst,4.1,Shelter Insurance,"Columbia, MO",Company - Private,Insurance Carriers,Insurance,101,165,133,MO,74,analyst
+157,Geospatial Data Scientist,3.5,Maxar Technologies,"Chantilly, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,101,165,133,VA,-1,data scientist
+158,Data Analyst,2.7,USAC,"Washington, DC",Nonprofit Organization,Telecommunications Services,Telecommunications,101,165,133,DC,23,analyst
+159,Computational Scientist,3.4,General Dynamics Information Technology,"Vicksburg, MS",Subsidiary or Business Segment,IT Services,Information Technology,101,165,133,MS,24,na
+160,Data Scientist,4.4,Offerpad,"Chandler, AZ",Company - Private,Real Estate,Real Estate,101,165,133,AZ,5,data scientist
+161,Senior Data Analyst,4,Autodesk,"San Francisco, CA",Company - Public,Computer Hardware & Software,Information Technology,101,165,133,CA,38,analyst
+162,Senior Data Analyst,4.2,Autodesk,"San Francisco, CA",Company - Public,Research & Development,Business Services,101,165,133,CA,52,analyst
+163,Data Engineer,3.5,Magna International Inc.,"Birmingham, AL",Company - Public,-1,-1,101,165,133,AL,63,data engineer
+164,Sr Data Analyst,2.3,United BioSource,"Blue Bell, PA",Other Organization,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,101,165,133,PA,17,analyst
+165,Data Scientist,3.4,Kelly,"Chicago, IL",Company - Public,Staffing & Outsourcing,Business Services,101,165,133,IL,74,data scientist
+166,"Machine Learning Scientist - Bay Area, CA",3.3,Tempus Labs,"Redwood City, CA",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,101,165,133,CA,5,mle
+167,Data Scientist,4.7,C3.ai,"Redwood City, CA",Company - Private,Enterprise Software & Network Solutions,Information Technology,101,165,133,CA,11,data scientist
+168,Senior Data Scientist - Algorithms,3.9,Quartet Health,"New York, NY",Company - Private,Enterprise Software & Network Solutions,Information Technology,101,165,133,NY,6,data scientist
+169,Data Analyst,3.3,Midland Credit Management,"San Diego, CA",Subsidiary or Business Segment,Banks & Credit Unions,Finance,101,165,133,CA,67,analyst
+170,Senior Data & Machine Learning Scientist,3.3,Tempus Labs,"Chicago, IL",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,101,165,133,IL,5,mle
+171,Data Engineer,4.4,Resurgent Capital Services,"Cincinnati, OH",Company - Private,Venture Capital & Private Equity,Finance,101,165,133,OH,22,data engineer
+172,"Data Scientist - Statistics, Early Career",3.7,PNNL,"Richland, WA",Government,Energy,"Oil, Gas, Energy & Utilities",56,97,76,WA,55,data scientist
+173,Data Scientist,3.5,Buckman,"Memphis, TN",Company - Private,Chemical Manufacturing,Manufacturing,56,97,76,TN,75,data scientist
+174,Machine Learning Engineer,3.6,Buckman,"Memphis, TN",Nonprofit Organization,Federal Agencies,Government,56,97,76,TN,53,mle
+175,Research Scientist - Patient-Centered Research (Remote),3.8,Evidera,"Bethesda, MD",Subsidiary or Business Segment,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,56,97,76,MD,7,na
+176,Jr. Business Data Analyst (position added 6/12/2020),4.7,webfx.com,"Harrisburg, PA",Company - Private,Advertising & Marketing,Business Services,56,97,76,PA,23,analyst
+177,Sr. Data Scientist II,3.5,Argo Group US,"New York, NY",Company - Public,Insurance Carriers,Insurance,56,97,76,NY,72,data scientist
+178,Data Scientist,3.3,BWX Technologies,"Oak Ridge, TN",Company - Public,Aerospace & Defense,Aerospace & Defense,56,97,76,TN,170,data scientist
+179,Senior Data Analyst,3.9,Life360,"San Francisco, CA",Company - Public,Internet,Information Technology,56,97,76,CA,12,analyst
+180,Lead Data Scientist,3.7,MassMutual,"Boston, MA",Company - Private,Insurance Carriers,Insurance,56,97,76,MA,169,data scientist
+181,Production Engineer - Statistics/Data Analysis,3.9,Natera,"San Carlos, CA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,56,97,76,CA,16,na
+182,Statistical Scientist,4,Genentech,"South San Francisco, CA",Subsidiary or Business Segment,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,56,97,76,CA,44,na
+183,Computational Behavioral Scientist,4.2,Ntrepid,"Herndon, VA",Company - Private,IT Services,Information Technology,56,97,76,VA,10,na
+184,Principal Data Scientist - Machine Learning,3.6,Constant Contact,"Waltham, MA",Subsidiary or Business Segment,Advertising & Marketing,Business Services,56,97,76,MA,25,data scientist
+185,Principal Machine Learning Scientist,4.7,Sage Intacct,"San Francisco, CA",Subsidiary or Business Segment,Computer Hardware & Software,Information Technology,56,97,76,CA,21,mle
+186,Data Engineer,4.1,Shape Security,"Santa Clara, CA",Company - Private,IT Services,Information Technology,56,97,76,CA,9,data engineer
+187,Principal Data Scientist,4,AstraZeneca,"Gaithersburg, MD",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,56,97,76,MD,107,data scientist
+188,Data Scientist,5,SkillSoniq,"San Francisco, CA",Company - Public,-1,-1,56,97,76,CA,-1,data scientist
+189,Senior Data Scientist - R&D Oncology,4,AstraZeneca,"New York, NY",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,56,97,76,NY,107,data scientist
+190,Data Scientist,4.3,Joby Aviation,"San Carlos, CA",Company - Private,-1,-1,56,97,76,CA,-1,data scientist
+191,"Health Plan Data Analyst, Sr",3.8,Cook Children's Health Care System,"Fort Worth, TX",Nonprofit Organization,Health Care Services & Hospitals,Health Care,56,97,76,TX,102,analyst
+192,"Principal Scientist/Associate Director, Quality Control and Analytical Technologies",3.8,Rubius Therapeutics,"Smithfield, RI",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,56,97,76,RI,7,director
+193,Analytics - Business Assurance Data Analyst,4.6,GreatAmerica Financial Services,"Cedar Rapids, IA",Company - Private,Lending,Finance,56,97,76,IA,28,analyst
+194,Data Scientist,3.4,Spectrum Communications and Consulting,"Chicago, IL",Company - Private,Advertising & Marketing,Business Services,79,106,92,IL,28,data scientist
+195,Data Scientist,4.1,Coverent,"McLean, VA",Company - Private,Consulting,Business Services,79,106,92,VA,12,data scientist
+196,Machine Learning Engineer,3.7,Mteq,"Fort Belvoir, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,79,106,92,VA,66,mle
+197,Data Engineer,4.4,Rocket Lawyer,"San Francisco, CA",Company - Private,Computer Hardware & Software,Information Technology,79,106,92,CA,12,data engineer
+198,"Senior Data Scientist – Image Analytics, Novartis AI Innovation Lab",3.9,Novartis,"Cambridge, MA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,79,106,92,MA,24,data scientist
+199,Data Engineer,3.6,Alion Science & Technology,"Linthicum Heights, MD",Company - Private,Research & Development,Business Services,79,106,92,MD,19,data engineer
+200,Data Science Instructor,4.5,Novetta,"Herndon, VA",Company - Private,Enterprise Software & Network Solutions,Information Technology,79,106,92,VA,8,na
+201,Senior Business Intelligence Analyst,3.7,Protolabs,"Maple Plain, MN",Company - Public,Miscellaneous Manufacturing,Manufacturing,79,106,92,MN,21,analyst
+202,In-Line Inspection Data Analyst,2.9,Quest Integrity,"Tulsa, OK",Company - Public,Oil & Gas Services,"Oil, Gas, Energy & Utilities",79,106,92,OK,24,analyst
+203,Data Scientist - TS/SCI FSP or CI Required,5,Phoenix Operations Group,"Annapolis Junction, MD",Company - Private,IT Services,Information Technology,79,106,92,MD,9,data scientist
+204,Data Scientist,3.4,Dice.com,"Newton, MA",Subsidiary or Business Segment,Staffing & Outsourcing,Business Services,79,106,92,MA,30,data scientist
+205,Senior Data Scientist,3.5,Maxar Technologies,"Herndon, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,79,106,92,VA,-1,data scientist
+206,Data Scientist - TS/SCI Required,5,Phoenix Operations Group,"Baltimore, MD",Company - Private,IT Services,Information Technology,79,106,92,MD,9,data scientist
+207,Data Science Software Engineer,4.8,Klaviyo,"Boston, MA",Company - Private,Computer Hardware & Software,Information Technology,79,106,92,MA,8,na
+208,ENGINEER - COMPUTER SCIENTIST - RESEARCH COMPUTER SCIENTIST - SIGNAL PROCESSING - SAN ANTONIO OR,3.9,Southwest Research Institute,"Oklahoma City, OK",Nonprofit Organization,Research & Development,Business Services,79,106,92,OK,73,na
+209,AI Ops Data Scientist,4,AstraZeneca,"Gaithersburg, MD",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,79,106,92,MD,107,data scientist
+210,"Intelligence Data Analyst, Senior",4.3,The Buffalo Group,"Fort Belvoir, VA",Company - Private,IT Services,Information Technology,79,106,92,VA,10,analyst
+211,Analytics Manager - Data Mart,3.5,Central California Alliance for Health,"Scotts Valley, CA",Nonprofit Organization,Health Care Services & Hospitals,Health Care,79,106,92,CA,24,manager
+212,Data Modeler (Analytical Systems),3.7,MassMutual,"Boston, MA",Company - Private,Insurance Carriers,Insurance,79,106,92,MA,169,na
+213,"Senior Machine Learning Scientist - Bay Area, CA",3.3,Tempus Labs,"Redwood City, CA",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,79,106,92,CA,5,mle
+214,Report Writer-Data Analyst,3.1,Security Finance Corporation of Spartanburg,"Spartanburg, SC",Company - Private,Lending,Finance,79,106,92,SC,65,analyst
+215,Data Scientist/Machine Learning,4.3,PulsePoint,"New York, NY",Company - Private,Internet,Information Technology,71,123,97,NY,9,data scientist
+216,Data Scientist - Risk,4.2,LSQ,"Orlando, FL",Company - Private,Investment Banking & Asset Management,Finance,71,123,97,FL,24,data scientist
+217,Data Engineer,4.4,Resurgent Capital Services,"Cincinnati, OH",Company - Private,Venture Capital & Private Equity,Finance,71,123,97,OH,22,data engineer
+218,Staff Data Scientist - Pricing,3.6,Opendoor,"San Francisco, CA",Company - Private,Real Estate,Real Estate,71,123,97,CA,6,data scientist
+219,Data Scientist,4.5,Global Data Management Inc,"Hartford, CT",Company - Private,IT Services,Information Technology,71,123,97,CT,12,data scientist
+220,Data Scientist,3,Photon Infotech,"Chicago, IL",Company - Private,IT Services,Information Technology,71,123,97,IL,21,data scientist
+221,Data Scientist,5,REE,United States,Company - Private,Transportation Equipment Manufacturing,Manufacturing,71,123,97,US,2,data scientist
+222,Machine Learning Engineer,3.6,Riverside Research Institute,"Beavercreek, OH",Nonprofit Organization,Federal Agencies,Government,71,123,97,OH,53,mle
+223,Equity Data Insights Analyst - Quantitative Analyst,3.6,T. Rowe Price,"Baltimore, MD",Company - Public,Investment Banking & Asset Management,Finance,71,123,97,MD,83,analyst
+224,Data Scientist,0,"Encode, Inc.","Norfolk, VA",Company - Private,IT Services,Information Technology,71,123,97,VA,-1,data scientist
+225,Research Scientist - Patient-Centered Research (Remote),3.8,Evidera,"Bethesda, MD",Subsidiary or Business Segment,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,71,123,97,MD,7,na
+226,Data Scientist,3.3,BWX Technologies,"Oak Ridge, TN",Company - Public,Aerospace & Defense,Aerospace & Defense,71,123,97,TN,170,data scientist
+227,Operations Data Analyst,3.8,Brighthouse Financial,"Charlotte, NC",Company - Public,Insurance Carriers,Insurance,71,123,97,NC,3,analyst
+228,Sr. Data Scientist II,3.5,Argo Group US,"New York, NY",Company - Public,Insurance Carriers,Insurance,71,123,97,NY,72,data scientist
+229,Data Scientist,3.3,II-VI Incorporated,"Champaign, IL",Company - Public,Telecommunications Manufacturing,Telecommunications,71,123,97,IL,49,data scientist
+230,Data Scientist,4.6,Surya Systems,"San Francisco, CA",Company - Private,Computer Hardware & Software,Information Technology,71,123,97,CA,-1,data scientist
+231,Senior Data Analyst,3.9,Life360,"San Francisco, CA",Company - Public,Internet,Information Technology,71,123,97,CA,12,analyst
+232,Data Scientist,3.9,Predictive Research Inc,"Plano, TX",Company - Private,Consulting,Business Services,71,123,97,TX,-1,data scientist
+233,Data Scientist,4.7,Oversight Systems,"Atlanta, GA",Company - Private,Computer Hardware & Software,Information Technology,90,124,107,GA,17,data scientist
+234,Senior Research Statistician- Data Scientist,4.8,Acuity Insurance,"Sheboygan, WI",Company - Private,Insurance Carriers,Insurance,90,124,107,WI,95,data scientist
+235,Software Data Engineer,3.1,1010data,"New York, NY",Company - Private,Computer Hardware & Software,Information Technology,90,124,107,NY,20,data engineer
+236,Data Scientist,3.6,Gigya,"Palo Alto, CA",Company - Private,Enterprise Software & Network Solutions,Information Technology,90,124,107,CA,14,data scientist
+237,Real World Evidence (RWE) Scientist,5,Genesis Research,"Hoboken, NJ",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,90,124,107,NJ,11,na
+238,Data Scientist,3.7,Sanofi,"Cambridge, MA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,90,124,107,MA,47,data scientist
+239,Data Scientist,3.7,XPO Logistics,"Lebanon, IN",Company - Public,Transportation Management,Transportation & Logistics,90,124,107,IN,9,data scientist
+240,Data Scientist,3.9,Trace Data,"Oakland, CA",Company - Private,Insurance Carriers,Insurance,90,124,107,CA,20,data scientist
+241,Data Scientist,4.3,Descript,"San Francisco, CA",Company - Private,-1,-1,90,124,107,CA,-1,data scientist
+242,Computer Scientist 1,4.2,Rincon Research Corporation,"Melbourne, FL",Company - Private,Aerospace & Defense,Aerospace & Defense,90,124,107,FL,37,na
+243,Lead Data Scientist,3.7,MassMutual,"Boston, MA",Company - Private,Insurance Carriers,Insurance,90,124,107,MA,169,data scientist
+244,Data Scientist,4,Better Hire,"Birmingham, AL",Company - Private,-1,-1,90,124,107,AL,-1,data scientist
+245,Data Scientist,3.3,Parker Hannifin,"Cleveland, OH",Company - Public,Industrial Manufacturing,Manufacturing,90,124,107,OH,103,data scientist
+246,Data Scientist,4.1,Gallup,"New York, NY",Company - Private,Consulting,Business Services,90,124,107,NY,85,data scientist
+247,Data Scientist,3.3,Insider Inc,"New York, NY",Company - Private,News Outlet,Media,90,124,107,NY,13,data scientist
+248,Data Scientist,3.9,Rapid Value Solutions,"San Francisco, CA",Company - Private,IT Services,Information Technology,90,124,107,CA,11,data scientist
+249,Environmental Data Science,3.1,Battelle,"Norwell, MA",Nonprofit Organization,Research & Development,Business Services,90,124,107,MA,91,na
+250,Computational Behavioral Scientist,4.2,Ntrepid,"Herndon, VA",Company - Private,IT Services,Information Technology,90,124,107,VA,10,na
+251,Data Scientist,5,"The Drive Media, Inc.","New York, NY",Unknown,-1,-1,90,124,107,NY,-1,data scientist
+252,Staff BI and Data Engineer,2.9,Affinity Solutions,"San Jose, CA",Company - Private,Advertising & Marketing,Business Services,90,124,107,CA,22,data engineer
+253,Principal Machine Learning Scientist,4.7,Sage Intacct,"San Francisco, CA",Subsidiary or Business Segment,Computer Hardware & Software,Information Technology,90,124,107,CA,21,mle
+254,Principal Data Scientist - Machine Learning,3.6,Constant Contact,"Waltham, MA",Subsidiary or Business Segment,Advertising & Marketing,Business Services,90,124,107,MA,25,data scientist
+255,Data Scientist-Human Resources,3.8,MIT Lincoln Laboratory,"Lexington, MA",Nonprofit Organization,Aerospace & Defense,Aerospace & Defense,91,150,120,MA,69,data scientist
+256,Associate Data Scientist,3.3,Puget Sound Energy,"Bothell, WA",Company - Private,Utilities,"Oil, Gas, Energy & Utilities",91,150,120,WA,21,data scientist
+257,"Data Scientist - Statistics, Mid-Career",3.7,Pacific Northwest National Laboratory,"Richland, WA",Government,Energy,"Oil, Gas, Energy & Utilities",91,150,120,WA,55,data scientist
+258,Director of Data Science,3.8,Analysis Group,"Boston, MA",Private Practice / Firm,Consulting,Business Services,91,150,120,MA,39,director
+259,Data Scientist,3.2,US Pharmacopeia,"Rockville, MD",Nonprofit Organization,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,91,150,120,MD,200,data scientist
+260,Data Scientist,4.6,Itlize Global,"Piscataway, NJ",Company - Private,IT Services,Information Technology,91,150,120,NJ,10,data scientist
+261,Data Scientist,3.5,eBay,"San Jose, CA",Company - Public,Internet,Information Technology,91,150,120,CA,25,data scientist
+262,"Data Engineer, Digital & Comp Pathology",5,Paige,"New York, NY",Company - Private,Enterprise Software & Network Solutions,Information Technology,91,150,120,NY,2,data engineer
+263,Data Engineer,4.1,Shape Security,"Santa Clara, CA",Company - Private,IT Services,Information Technology,91,150,120,CA,9,data engineer
+264,"Manager / Lead, Data Science & Analytics",4.1,ABIOMED,"Danvers, MA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,91,150,120,MA,39,manager
+265,Data Scientist,3.5,Comcast,"New York, NY",Company - Public,-1,-1,91,150,120,NY,57,data scientist
+266,Data Scientist,3.2,"Metronome, LLC","Vienna, VA",Company - Private,IT Services,Information Technology,91,150,120,VA,9,data scientist
+267,Data Scientist,5,SkillSoniq,"San Francisco, CA",Company - Public,-1,-1,91,150,120,CA,-1,data scientist
+268,Data Scientist,4.7,Lawrence Livermore National Lab,"Livermore, CA",Government,Federal Agencies,Government,91,150,120,CA,68,data scientist
+269,Diversity and Inclusion Data Analyst,3.8,FHLBank Pittsburgh,"Pittsburgh, PA",Company - Private,Banks & Credit Unions,Finance,91,150,120,PA,88,analyst
+270,Data Scientist,3.6,Jacobs,"Herndon, VA",Company - Public,Architectural & Engineering Services,Business Services,91,150,120,VA,73,data scientist
+271,Data Scientist,4.8,Klaviyo,"Boston, MA",Company - Private,Computer Hardware & Software,Information Technology,91,150,120,MA,8,data scientist
+272,Data Scientist,3.3,Underwriters Laboratories,"Northbrook, IL",Company - Private,Consulting,Business Services,91,150,120,IL,126,data scientist
+273,Data Scientist,3.7,Altus Group,"Irvine, CA",Company - Public,Real Estate,Real Estate,91,150,120,CA,15,data scientist
+274,Data Scientist,5,Jobot,"Irvine, CA",Company - Private,Staffing & Outsourcing,Business Services,91,150,120,CA,2,data scientist
+275,Data Scientist,0,Trovetechs Inc,"San Francisco, CA",Company - Private,-1,-1,91,150,120,CA,-1,data scientist
+276,Senior Analyst/Data Scientist,3.4,Edmunds.com,"Santa Monica, CA",Company - Private,Internet,Information Technology,141,225,183,CA,54,data scientist
+277,Data Scientist,5,Cohere Health,"Boston, MA",Company - Private,IT Services,Information Technology,141,225,183,MA,1,data scientist
+278,Data Scientist,0,Trovetechs Inc,"San Francisco, CA",Company - Private,-1,-1,141,225,183,CA,-1,data scientist
+279,Senior Data Scientist - R&D Oncology,4,AstraZeneca,"New York, NY",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,141,225,183,NY,107,data scientist
+280,Data Scientist,4.2,Oshkosh Corporation,"Oshkosh, WI",Company - Public,Transportation Equipment Manufacturing,Manufacturing,141,225,183,WI,103,data scientist
+281,Data Scientist,4.3,Joby Aviation,"San Carlos, CA",Company - Private,-1,-1,141,225,183,CA,-1,data scientist
+282,Data Scientist,3.4,Mackin,"Menlo Park, CA",Company - Private,Architectural & Engineering Services,Business Services,141,225,183,CA,60,data scientist
+283,Data Scientist,0,PETADATA,"San Francisco, CA",Company - Private,-1,-1,141,225,183,CA,-1,data scientist
+284,Data Scientist,4.4,VBeyond Corporation,"Dallas, TX",Company - Private,Staffing & Outsourcing,Business Services,141,225,183,TX,14,data scientist
+285,Data Scientist Machine Learning,3.5,Leidos,"Arlington, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,141,225,183,VA,51,data scientist
+286,Data Scientist,3.7,Take-Two,"San Francisco, CA",Company - Public,Video Games,Media,141,225,183,CA,27,data scientist
+287,Data Scientist,3.7,Colony Brands,"Monroe, WI",Company - Private,Food & Beverage Stores,Retail,141,225,183,WI,-1,data scientist
+288,Data Scientist,4.1,Capio Group,"Sacramento, CA",Hospital,Health Care Services & Hospitals,Health Care,141,225,183,CA,-1,data scientist
+289,Data Scientist,3.4,SleePare,"New York, NY",Company - Private,Other Retail Stores,Retail,141,225,183,NY,3,data scientist
+290,Data Analyst,4.5,ShorePoint,"Reston, VA",Company - Private,IT Services,Information Technology,141,225,183,VA,3,analyst
+291,Data Scientist,3.5,Dolphin,"New York, NY",Company - Private,"Hotels, Motels, & Resorts",Travel & Tourism,141,225,183,NY,30,data scientist
+292,Data Scientist,3.6,TE Connectivity,"Hampton, VA",Company - Public,Electrical & Electronic Manufacturing,Manufacturing,141,225,183,VA,13,data scientist
+293,Data Scientist,3.2,State of Virginia,"Richmond, VA",Government,State & Regional Agencies,Government,141,225,183,VA,232,data scientist
+294,Data Scientist,3.7,TA Digital,"New York, NY",Company - Private,Computer Hardware & Software,Information Technology,141,225,183,NY,20,data scientist
+295,Data Scientist,4,Market America Inc,"Monterey, CA",Company - Private,Other Retail Stores,Retail,141,225,183,CA,28,data scientist
+296,Data Scientist,3.2,Triplebyte,"Chicago, IL",Company - Private,Computer Hardware & Software,Information Technology,145,225,185,IL,5,data scientist
+297,Data Scientist,4.5,Kingfisher Systems,"McLean, VA",Company - Private,Federal Agencies,Government,145,225,185,VA,15,data scientist
+298,Data Scientist,3.9,ALTA IT Services,"Woodlawn, MD",Company - Private,IT Services,Information Technology,145,225,185,MD,16,data scientist
+299,Data Scientist,3.2,Kollasoft Inc.,United States,Company - Private,IT Services,Information Technology,145,225,185,US,-1,data scientist
+300,Data Scientist,5,Kollasoft Inc.,"New York, NY",Company - Public,-1,-1,145,225,185,NY,-1,data scientist
+301,Data Scientist,3.4,ASRC Federal Holding Company,"Reston, VA",Company - Private,Aerospace & Defense,Aerospace & Defense,145,225,185,VA,17,data scientist
+302,Data Scientist,4.4,Adwait Algorithm,"New York, NY",Company - Private,IT Services,Information Technology,145,225,185,NY,5,data scientist
+303,"Health Plan Data Analyst, Sr",3.8,Cook Children's Health Care System,"Fort Worth, TX",Nonprofit Organization,Health Care Services & Hospitals,Health Care,145,225,185,TX,102,analyst
+304,"Principal Scientist/Associate Director, Quality Control and Analytical Technologies",3.8,Rubius Therapeutics,"Smithfield, RI",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,145,225,185,RI,7,director
+305,Data Scientist,3.5,Cambridge FX,"Atlanta, GA",Company - Public,Financial Transaction Processing,Finance,145,225,185,GA,28,data scientist
+306,Senior Data Scientist,3.8,Metromile,"San Francisco, CA",Company - Private,Insurance Carriers,Insurance,145,225,185,CA,9,data scientist
+307,Data Scientist,3.9,Criteo,"Ann Arbor, MI",Company - Public,Internet,Information Technology,145,225,185,MI,15,data scientist
+308,Data Scientist,3.4,Advance Sourcing Concepts,"Pittsburgh, PA",Company - Private,-1,-1,145,225,185,PA,-1,data scientist
+309,Data Scientist,3.8,Enterprise Solutions Inc,"New York, NY",Company - Private,Staffing & Outsourcing,Business Services,145,225,185,NY,20,data scientist
+310,Analytics - Business Assurance Data Analyst,4.6,GreatAmerica Financial Services,"Cedar Rapids, IA",Company - Private,Lending,Finance,145,225,185,IA,28,analyst
+311,Data Scientist,0,Microagility,"New York, NY",Company - Private,Consulting,Business Services,145,225,185,NY,-1,data scientist
+312,Data Scientist,4.6,"Conch Technologies, Inc","Concord, CA",Company - Private,Consulting,Business Services,145,225,185,CA,-1,data scientist
+313,"Development Scientist, Voltaren",3.9,GSK,"Richmond, VA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,145,225,185,VA,190,na
+314,Data Scientist,0,"Rainmaker Resources, LLC","Cincinnati, OH",Company - Private,-1,-1,145,225,185,OH,-1,data scientist
+315,Data Scientist,3.7,GovTech,"San Francisco, CA",Government,Federal Agencies,Government,79,147,113,CA,4,data scientist
+316,Data Scientist,3.3,Intellectual Ventures,"Bellevue, WA",Company - Private,Investment Banking & Asset Management,Finance,79,147,113,WA,20,data scientist
+317,Data Engineer,4.4,Rocket Lawyer,"San Francisco, CA",Company - Private,Computer Hardware & Software,Information Technology,79,147,113,CA,12,data engineer
+318,Data Scientist,3.7,22nd Century Technologies,"Oakland, CA",Company - Private,IT Services,Information Technology,79,147,113,CA,23,data scientist
+319,Data Scientist,3.3,Huxley,"San Francisco, CA",Company - Private,Staffing & Outsourcing,Business Services,79,147,113,CA,25,data scientist
+320,Data Scientist,3.4,FM Systems,"Boston, MA",Company - Private,Computer Hardware & Software,Information Technology,79,147,113,MA,36,data scientist
+321,Data Scientist,0,B4Corp,"Reston, VA",Company - Private,IT Services,Information Technology,79,147,113,VA,-1,data scientist
+322,Machine Learning Engineer,3.7,Mteq,"Fort Belvoir, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,79,147,113,VA,66,mle
+323,Principal Data & Analytics Platform Engineer,3.7,Blue Cross and Blue Shield of North Carolina,"Durham, NC",Company - Private,Insurance Carriers,Insurance,79,147,113,NC,87,na
+324,Machine Learning Engineer/Scientist,4.8,Jane Street,"New York, NY",Company - Private,Investment Banking & Asset Management,Finance,79,147,113,NY,20,mle
+325,Data Scientist,5,SSATI,"McLean, VA",Company - Private,Computer Hardware & Software,Information Technology,79,147,113,VA,17,data scientist
+326,"Senior Data Scientist – Image Analytics, Novartis AI Innovation Lab",3.9,Novartis,"Cambridge, MA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,79,147,113,MA,24,data scientist
+327,Data Scientist,3.4,Solving IT International Inc,"Chicago, IL",Company - Private,-1,-1,79,147,113,IL,-1,data scientist
+328,Data Scientist,3.3,The Davey Tree Expert Company,"Kent, OH",Self-employed,Timber Operations,Agriculture & Forestry,79,147,113,OH,140,data scientist
+329,Data Scientist,4.6,Centauri,"Reston, VA",Company - Private,Aerospace & Defense,Aerospace & Defense,79,147,113,VA,21,data scientist
+330,Data Scientist,0,Stride Search,"San Francisco, CA",Company - Private,-1,-1,79,147,113,CA,-1,data scientist
+331,Machine Learning Engineer,2.6,Software Engineering Institute,"Pittsburgh, PA",College / University,Colleges & Universities,Education,79,147,113,PA,36,mle
+332,Data Analyst - Unilever Prestige,3.8,Dermalogica,"Carson, CA",Subsidiary or Business Segment,Consumer Products Manufacturing,Manufacturing,79,147,113,CA,34,analyst
+333,Data Scientist,4.8,TechProjects,"New York, NY",Company - Private,IT Services,Information Technology,79,147,113,NY,9,data scientist
+334,"VP, Data Science",3.9,7Park Data,"New York, NY",Company - Private,Research & Development,Business Services,79,147,113,NY,8,na
+335,Data Scientist,4,Netskope,"Santa Clara, CA",Company - Private,Enterprise Software & Network Solutions,Information Technology,122,146,134,CA,8,data scientist
+336,Data Scientist,4.2,Eversight,"Palo Alto, CA",Company - Private,Enterprise Software & Network Solutions,Information Technology,122,146,134,CA,7,data scientist
+337,Senior Business Intelligence Analyst,3.7,Protolabs,"Maple Plain, MN",Company - Public,Miscellaneous Manufacturing,Manufacturing,122,146,134,MN,21,analyst
+338,Data Scientist,3,Ameritas Life Insurance Corp,"Cincinnati, OH",Company - Private,Insurance Agencies & Brokerages,Insurance,122,146,134,OH,133,data scientist
+339,Data Engineer - Kafka,3.5,Western Digital,"San Jose, CA",Company - Public,Computer Hardware & Software,Information Technology,122,146,134,CA,50,data engineer
+340,Data Scientist,2.9,"Shimento, Inc.","Santa Clara, CA",Company - Private,-1,-1,122,146,134,CA,-1,data scientist
+341,Data Scientist,5,Averity,"New York, NY",Company - Private,Staffing & Outsourcing,Business Services,122,146,134,NY,6,data scientist
+342,Data Scientist,4.7,Praxis Engineering,"Chantilly, VA",Subsidiary or Business Segment,Computer Hardware & Software,Information Technology,122,146,134,VA,18,data scientist
+343,Data Scientist,0,Point72 Ventures,"Palo Alto, CA",-1,-1,-1,122,146,134,CA,-1,data scientist
+344,Decision Scientist,4.5,Johns Hopkins University Applied Physics Laboratory,"Laurel, MD",Nonprofit Organization,Aerospace & Defense,Aerospace & Defense,122,146,134,MD,78,na
+345,Data Scientist,4.9,Cambridge Mobile Telematics,"Cambridge, MA",Company - Private,Enterprise Software & Network Solutions,Information Technology,122,146,134,MA,10,data scientist
+346,Data Science All Star Program - Data Engineer Track,4.6,Blend360,"Columbia, MD",Company - Private,Consulting,Business Services,122,146,134,MD,18,data engineer
+347,Data Scientist - TS/SCI FSP or CI Required,5,Phoenix Operations Group,"Annapolis Junction, MD",Company - Private,IT Services,Information Technology,122,146,134,MD,9,data scientist
+348,Data Analyst,3.9,Nolij Consulting,"Falls Church, VA",Company - Public,Consulting,Business Services,122,146,134,VA,8,analyst
+349,Data Scientist,0,Hatch Data Inc,"San Francisco, CA",-1,-1,-1,122,146,134,CA,-1,data scientist
+350,Data Scientist,0,Hatch Data Inc,"San Francisco, CA",-1,-1,-1,122,146,134,CA,-1,data scientist
+351,Data Scientist,0,Hatch Data Inc,"San Francisco, CA",-1,-1,-1,122,146,134,CA,-1,data scientist
+352,Data Scientist,0,Hatch Data Inc,"San Francisco, CA",-1,-1,-1,122,146,134,CA,-1,data scientist
+353,Data Scientist,0,Hatch Data Inc,"San Francisco, CA",-1,-1,-1,122,146,134,CA,-1,data scientist
+354,Data Scientist,0,Hatch Data Inc,"San Francisco, CA",-1,-1,-1,122,146,134,CA,-1,data scientist
+355,Senior Data Scientist,3.5,Maxar Technologies,"Herndon, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,122,146,134,VA,-1,data scientist
+356,Data Scientist,4.3,Quick Base,"Cambridge, MA",Company - Private,Enterprise Software & Network Solutions,Information Technology,112,116,114,MA,21,data scientist
+357,Data Scientist,3.7,Takeda,"Cambridge, MA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,112,116,114,MA,239,data scientist
+358,Data Scientist,3.5,Maxar Technologies,"Herndon, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,112,116,114,VA,-1,data scientist
+359,ENGINEER - COMPUTER SCIENTIST - RESEARCH COMPUTER SCIENTIST - SIGNAL PROCESSING - SAN ANTONIO OR,3.9,Southwest Research Institute,"Oklahoma City, OK",Nonprofit Organization,Research & Development,Business Services,112,116,114,OK,73,na
+360,Data Scientist,4.7,Compass Consulting Group,"Thousand Oaks, CA",Company - Private,Consulting,Business Services,112,116,114,CA,12,data scientist
+361,Data Science Software Engineer,4.8,Klaviyo,"Boston, MA",Company - Private,Computer Hardware & Software,Information Technology,112,116,114,MA,8,na
+362,AI Ops Data Scientist,4,AstraZeneca,"Gaithersburg, MD",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,112,116,114,MD,107,data scientist
+363,Data Scientist,4.4,"SolutionIT, Inc.","Edison, NJ",Company - Private,-1,-1,112,116,114,NJ,-1,data scientist
+364,Data Scientist,3.2,Perspecta,"Adelphi, MD",Company - Public,Aerospace & Defense,Aerospace & Defense,112,116,114,MD,2,data scientist
+365,Data Scientist,4.5,Smith Hanley Associates,"Washington, DC",Company - Private,Staffing & Outsourcing,Business Services,112,116,114,DC,40,data scientist
+366,Scientist - Machine Learning,3.5,Allen Institute,"Seattle, WA",Nonprofit Organization,Research & Development,Business Services,112,116,114,WA,17,mle
+367,Data Scientist,4.4,Eliassen Group,"Plano, TX",Company - Private,Staffing & Outsourcing,Business Services,112,116,114,TX,31,data scientist
+368,Data Scientist,3.1,Bayside Solutions,"Sunnyvale, CA",Company - Private,Staffing & Outsourcing,Business Services,112,116,114,CA,19,data scientist
+369,Sr. Data Scientist,3.5,Evolve Vacation Rental,"Denver, CO",Company - Private,Travel Agencies,Travel & Tourism,112,116,114,CO,9,data scientist
+370,Data Scientist,3.8,AgreeYa Solutions,"Thousand Oaks, CA",Company - Private,IT Services,Information Technology,112,116,114,CA,21,data scientist
+371,Data Scientist,3.7,Carolina Power & Light Co,"McLean, VA",Subsidiary or Business Segment,Energy,"Oil, Gas, Energy & Utilities",112,116,114,VA,112,data scientist
+372,Analytics Manager - Data Mart,3.5,Central California Alliance for Health,"Scotts Valley, CA",Nonprofit Organization,Health Care Services & Hospitals,Health Care,112,116,114,CA,24,manager
+373,Data Modeler (Analytical Systems),3.7,MassMutual,"Boston, MA",Company - Private,Insurance Carriers,Insurance,112,116,114,MA,169,na
+374,Applied AI Scientist / Engineer,5,"New Iron Group, Inc.","Boston, MA",Contract,Computer Hardware & Software,Information Technology,112,116,114,MA,17,na
+375,"Data Engineer (Analytics, SQL, Python, AWS)",4,Travelers,"Hartford, CT",Company - Public,Insurance Carriers,Insurance,112,116,114,CT,167,data engineer
+376,Senior Data Analyst - Finance & Platform Analytics,3.6,Twitch,"San Francisco, CA",Subsidiary or Business Segment,Internet,Information Technology,112,116,114,CA,9,analyst
+377,Senior Data Scientist,4.8,Klaviyo,"Boston, MA",Company - Private,Computer Hardware & Software,Information Technology,110,163,136,MA,8,data scientist
+378,Market Research Data Scientist,3.8,GutCheck,"Denver, CO",Company - Private,Advertising & Marketing,Business Services,110,163,136,CO,11,data scientist
+379,IT Partner Digital Health Technology and Data Science,3.6,Biogen,"Cambridge, MA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,110,163,136,MA,42,na
+380,Data Scientist,0,HireAi,"San Francisco, CA",-1,-1,-1,110,163,136,CA,-1,data scientist
+381,Data Scientist,0,HireAi,"San Francisco, CA",-1,-1,-1,110,163,136,CA,-1,data scientist
+382,"Senior Machine Learning Scientist - Bay Area, CA",3.3,Tempus Labs,"Redwood City, CA",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,110,163,136,CA,5,mle
+383,"Software Engineer (Data Scientist, C,C++,Linux,Unix) - SISW - MG",4.1,Mentor Graphics,"Fremont, CA",Company - Public,Computer Hardware & Software,Information Technology,110,163,136,CA,39,data scientist
+384,Senior Clinical Data Scientist Programmer,3.6,WCG (WIRB-Copernicus Group),"Hamilton, NJ",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,110,163,136,NJ,-1,data scientist
+385,Data Engineer,4.5,Kingfisher Systems,"Falls Church, VA",Company - Private,Federal Agencies,Government,110,163,136,VA,15,data engineer
+386,Computer Vision / Deep Learning Scientist,3.3,Tempus Labs,"Chicago, IL",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,110,163,136,IL,5,na
+387,Data Solutions Engineer - Data Modeler,3.4,Liberty Mutual Insurance,"Indianapolis, IN",Company - Private,Insurance Carriers,Insurance,110,163,136,IN,108,na
+388,Data Scientist,4.3,Visionary Integration Professionals,"Washington, DC",Company - Private,IT Services,Information Technology,110,163,136,DC,24,data scientist
+389,Data Scientist (TS/SCI w/ Poly),3.5,Maxar Technologies,"Herndon, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,110,163,136,VA,-1,data scientist
+390,Weapons and Sensors Engineer/Scientist,4,Dynetics,"Huntsville, AL",Company - Private,Aerospace & Defense,Aerospace & Defense,110,163,136,AL,46,na
+391,Applied Computer Scientist,4.5,Systems & Technology Research,"Woburn, MA",Company - Private,Aerospace & Defense,Aerospace & Defense,110,163,136,MA,10,na
+392,Senior Data Analyst,4.5,Novetta,"Herndon, VA",Company - Private,Enterprise Software & Network Solutions,Information Technology,110,163,136,VA,8,analyst
+393,Cloud Data Engineer (Azure),3.9,Navy Federal Credit Union,"Merrifield, VA",Other Organization,Banks & Credit Unions,Finance,110,163,136,VA,87,data engineer
+394,"Lead Certified Clinical Laboratory Scientist - Saturday - Tuesday, 8:00pm - 6:30am shift",4,Exact Sciences Corporation,"Madison, WI",Company - Public,Health Care Services & Hospitals,Health Care,110,163,136,WI,25,na
+395,Sr. Data Analyst,3.6,Community Behavioral Health,"Philadelphia, PA",Company - Private,Health Care Services & Hospitals,Health Care,110,163,136,PA,26,analyst
+396,Senior Scientist - Toxicologist - Product Integrity (Stewardship),3.3,Reynolds American,"Winston-Salem, NC",Company - Private,Consumer Products Manufacturing,Manufacturing,110,163,136,NC,145,na
+397,Senior Machine Learning Engineer,5,LifeOmic,"Raleigh, NC",Company - Private,Enterprise Software & Network Solutions,Information Technology,110,163,136,NC,4,mle
+398,Product Data Scientist - Ads Data Science,4.1,Twitter,"San Francisco, CA",Company - Public,Internet,Information Technology,124,198,161,CA,14,data scientist
+399,Data Scientist,3.2,Postmates - Corporate HQ,"San Francisco, CA",Company - Private,Express Delivery Services,Transportation & Logistics,124,198,161,CA,9,data scientist
+400,Data Scientist,4.9,"Visionist, Inc.","Columbia, MD",Company - Private,Enterprise Software & Network Solutions,Information Technology,124,198,161,MD,10,data scientist
+401,Data Scientist,0,Navio,"San Mateo, CA",Unknown,-1,-1,124,198,161,CA,-1,data scientist
+402,Data Scientist,3.3,Concerto HealthAI,"Boston, MA",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,124,198,161,MA,2,data scientist
+403,Data Scientist,0,Evolvinc,"Burbank, CA",Company - Private,IT Services,Information Technology,124,198,161,CA,15,data scientist
+404,Data Scientist,5,PROPRIUS,"Sunnyvale, CA",Company - Private,Enterprise Software & Network Solutions,Information Technology,124,198,161,CA,-1,data scientist
+405,Data Scientist,3.4,TECHNOCRAFT Solutions,"San Ramon, CA",Company - Private,Advertising & Marketing,Business Services,124,198,161,CA,-1,data scientist
+406,Data Scientist,4.1,"Latitude, Inc.","Washington, DC",Company - Private,Consulting,Business Services,124,198,161,DC,-1,data scientist
+407,Data Scientist,5,Royce Geospatial,"Springfield, VA",Company - Private,Aerospace & Defense,Aerospace & Defense,124,198,161,VA,6,data scientist
+408,Data Scientist,4.2,CyberCoders,"Phoenix, AZ",Subsidiary or Business Segment,Staffing & Outsourcing,Business Services,124,198,161,AZ,21,data scientist
+409,Data Scientist,3.7,Booz Allen Hamilton Inc.,"Oxnard, CA",Company - Public,Consulting,Business Services,124,198,161,CA,106,data scientist
+410,Data Scientist,3.8,Burns & McDonnell,"Kansas City, MO",Company - Private,Architectural & Engineering Services,Business Services,124,198,161,MO,122,data scientist
+411,Data Scientist,4.8,InvenTech Info,"Jersey City, NJ",Company - Private,IT Services,Information Technology,124,198,161,NJ,10,data scientist
+412,Data Scientist,3.5,Robert Half,"Manchester, NH",Company - Public,Staffing & Outsourcing,Business Services,124,198,161,NH,72,data scientist
+413,Analytics - Business Assurance Data Analyst,4.6,GreatAmerica Financial Services,"Cedar Rapids, IA",Company - Private,Lending,Finance,124,198,161,IA,28,analyst
+414,Data Scientist,4.5,Conflux Systems Inc.,"Winters, TX",Company - Private,Accounting,Accounting & Legal,124,198,161,TX,-1,data scientist
+415,Data Scientist,3.9,Criteo,"Ann Arbor, MI",Company - Public,Internet,Information Technology,124,198,161,MI,15,data scientist
+416,Data Scientist,3.4,Voice,"Brooklyn, NY",Company - Private,-1,-1,124,198,161,NY,-1,data scientist
+417,Data Scientist,0,Microagility,"New York, NY",Company - Private,Consulting,Business Services,124,198,161,NY,-1,data scientist
+418,Data Scientist,4.1,Coverent,"McLean, VA",Company - Private,Consulting,Business Services,124,198,161,VA,12,data scientist
+419,Data Scientist,3.7,Via Transportation,"New York, NY",Company - Private,Internet,Information Technology,79,133,106,NY,8,data scientist
+420,Senior Data Scientist,3.5,Benson Hill,"Saint Louis, MO",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,79,133,106,MO,8,data scientist
+421,Data Scientist,4.6,"Conch Technologies, Inc","Concord, CA",Company - Private,Consulting,Business Services,79,133,106,CA,-1,data scientist
+422,Data Scientist,0,Falcon IT & Staffing Solutions,"Fort Belvoir, VA",Company - Public,-1,-1,79,133,106,VA,-1,data scientist
+423,Data Scientist,0,"Rainmaker Resources, LLC","Cincinnati, OH",Company - Private,-1,-1,79,133,106,OH,-1,data scientist
+424,Data Engineer,4.4,Rocket Lawyer,"San Francisco, CA",Company - Private,Computer Hardware & Software,Information Technology,79,133,106,CA,12,data engineer
+425,Data Scientist,3.6,DataLab USA,"Germantown, MD",Company - Private,IT Services,Information Technology,79,133,106,MD,-1,data scientist
+426,Data Scientist,3.1,Werner Enterprises Inc,"Omaha, NE",Company - Public,Logistics & Supply Chain,Transportation & Logistics,79,133,106,NE,64,data scientist
+427,Data Scientist,5,PeopleCom,"McLean, VA",Company - Private,-1,-1,79,133,106,VA,-1,data scientist
+428,Data Scientist - Machine Learning,5,VANTA Partners,"Open Fork, VA",Company - Private,Staffing & Outsourcing,Business Services,79,133,106,VA,2,data scientist
+429,Data Scientist,0,B4Corp,"Reston, VA",Company - Private,IT Services,Information Technology,79,133,106,VA,-1,data scientist
+430,Data Scientist,0,"Blue Icy Water, LLC",United States,Company - Private,-1,-1,79,133,106,US,-1,data scientist
+431,Data Scientist,3.5,"Farmer's Business Network, Inc.","San Carlos, CA",Company - Private,Farm Support Services,Agriculture & Forestry,79,133,106,CA,6,data scientist
+432,Data Scientist,0,Sonde Health,"Boston, MA",Private Practice / Firm,Health Care Services & Hospitals,Health Care,79,133,106,MA,-1,data scientist
+433,Data Scientist,5,Maxiom,"Ashburn, VA",Company - Public,-1,-1,79,133,106,VA,-1,data scientist
+434,Data Scientist,2.7,Change Healthcare,"Lombard, IL",Company - Public,IT Services,Information Technology,79,133,106,IL,13,data scientist
+435,Data Scientist,4.1,DCS Corp,"Hampton, VA",Company - Private,Research & Development,Business Services,79,133,106,VA,43,data scientist
+436,Data Scientist,2.1,Hive (CA),"San Francisco, CA",Company - Private,Telecommunications Services,Telecommunications,79,133,106,CA,1,data scientist
+437,Machine Learning Engineer/Scientist,4.8,Jane Street,"New York, NY",Company - Private,Investment Banking & Asset Management,Finance,79,133,106,NY,20,mle
+438,Data Scientist - Intermediate,4.5,Envision LLC,"Saint Louis, MO",Company - Private,Staffing & Outsourcing,Business Services,69,116,92,MO,26,data scientist
+439,Principal Data Scientist,4,Autodesk,"San Francisco, CA",Company - Public,Computer Hardware & Software,Information Technology,69,116,92,CA,38,data scientist
+440,Data Scientist,3.3,Hackensack Meridian Health,"Edison, NJ",Nonprofit Organization,Health Care Services & Hospitals,Health Care,69,116,92,NJ,-1,data scientist
+441,"Senior Data Scientist – Image Analytics, Novartis AI Innovation Lab",3.9,Novartis,"Cambridge, MA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,69,116,92,MA,24,data scientist
+442,Data Scientist,3.2,Net2Source Inc.,"Alpharetta, GA",Company - Private,Staffing & Outsourcing,Business Services,69,116,92,GA,13,data scientist
+443,Data Scientist,3.2,The Trade Desk,"Boulder, CO",Company - Public,Internet,Information Technology,69,116,92,CO,11,data scientist
+444,Data Scientist- Industrial Discrete Sector Industry,3.7,IBM,"Atlanta, GA",Company - Public,IT Services,Information Technology,69,116,92,GA,109,data scientist
+445,Data Scientist,4.4,Knowesis Inc.,"Falls Church, VA",Company - Private,Consulting,Business Services,69,116,92,VA,13,data scientist
+446,Data Scientist,3.1,MoTek Technologies,"Mountain View, CA",Company - Private,IT Services,Information Technology,69,116,92,CA,11,data scientist
+447,Data Scientist,3.3,The Davey Tree Expert Company,"Kent, OH",Self-employed,Timber Operations,Agriculture & Forestry,69,116,92,OH,140,data scientist
+448,Data Scientist,3.5,HPOne,"Trumbull, CT",Company - Private,Insurance Carriers,Insurance,69,116,92,CT,14,data scientist
+449,Data Scientist,0,Stride Search,"San Francisco, CA",Company - Private,-1,-1,69,116,92,CA,-1,data scientist
+450,Machine Learning Engineer,2.6,Software Engineering Institute,"Pittsburgh, PA",College / University,Colleges & Universities,Education,69,116,92,PA,36,mle
+451,Data Scientist,0,Blue Cloak LLC,"Sterling, VA",-1,-1,-1,69,116,92,VA,-1,data scientist
+452,Data Scientist,2.7,TBWA\Chiat\Day,"New York, NY",Company - Public,Advertising & Marketing,Business Services,69,116,92,NY,52,data scientist
+453,Data Scientist,3.5,ThreeBridge Solutions,"Alpharetta, GA",Company - Private,Consulting,Business Services,69,116,92,GA,11,data scientist
+454,Data Scientist,3.2,"Numeric, LLC","Philadelphia, PA",Company - Private,Staffing & Outsourcing,Business Services,69,116,92,PA,-1,data scientist
+455,Data Analyst - Unilever Prestige,3.8,Dermalogica,"Carson, CA",Subsidiary or Business Segment,Consumer Products Manufacturing,Manufacturing,69,116,92,CA,34,analyst
+456,Data Scientist,4.2,Centraprise,"Foster City, CA",Company - Private,IT Services,Information Technology,69,116,92,CA,-1,data scientist
+457,Data Scientist,4.8,TechProjects,"New York, NY",Company - Private,IT Services,Information Technology,69,116,92,NY,9,data scientist
+458,Data Scientist,4.2,DW Simpson,"Frederick, MD",Company - Private,Staffing & Outsourcing,Business Services,69,116,92,MD,31,data scientist
+459,Data & Machine Learning Scientist,3.3,Tempus Labs,"Chicago, IL",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,31,56,43,IL,5,mle
+460,Data Scientist,4,Grid Dynamics,"Santa Clara, CA",Company - Private,Enterprise Software & Network Solutions,Information Technology,31,56,43,CA,14,data scientist
+461,"VP, Data Science",3.9,7Park Data,"New York, NY",Company - Private,Research & Development,Business Services,31,56,43,NY,8,na
+462,Senior Business Intelligence Analyst,3.7,Protolabs,"Maple Plain, MN",Company - Public,Miscellaneous Manufacturing,Manufacturing,31,56,43,MN,21,analyst
+463,Data Scientist,3.9,LinQuest,"Colorado Springs, CO",Company - Private,Aerospace & Defense,Aerospace & Defense,31,56,43,CO,16,data scientist
+464,Data Engineer - Kafka,3.5,Western Digital,"San Jose, CA",Company - Public,Computer Hardware & Software,Information Technology,31,56,43,CA,50,data engineer
+465,Data Scientist,4,Trexquant Investment,United States,Company - Private,Investment Banking & Asset Management,Finance,31,56,43,US,8,data scientist
+466,Data Scientist,3,Ameritas Life Insurance Corp,"Cincinnati, OH",Company - Private,Insurance Agencies & Brokerages,Insurance,31,56,43,OH,133,data scientist
+467,Data Scientist,3.7,Fleetcor,"Atlanta, GA",Company - Public,Financial Transaction Processing,Finance,31,56,43,GA,20,data scientist
+468,Data Scientist,4.5,Radiant Digital,"Washington, DC",Company - Private,-1,-1,31,56,43,DC,-1,data scientist
+469,Data Scientist,2.8,Child Care Aware of America,"Arlington, VA",Nonprofit Organization,Social Assistance,Non-Profit,31,56,43,VA,33,data scientist
+470,Data Scientist,4.1,IntelliPro Group Inc.,"Santa Clara, CA",Company - Private,-1,-1,31,56,43,CA,-1,data scientist
+471,In-Line Inspection Data Analyst,2.9,Quest Integrity,"Tulsa, OK",Company - Public,Oil & Gas Services,"Oil, Gas, Energy & Utilities",31,56,43,OK,24,analyst
+472,Data Scientist,4.7,Praxis Engineering,"Chantilly, VA",Subsidiary or Business Segment,Computer Hardware & Software,Information Technology,31,56,43,VA,18,data scientist
+473,Data Scientist,3.4,USI,"Southfield, MI",Company - Private,Construction,"Construction, Repair & Maintenance",31,56,43,MI,22,data scientist
+474,Data Scientist,3.9,Apex Systems,"San Francisco, CA",Subsidiary or Business Segment,Staffing & Outsourcing,Business Services,31,56,43,CA,25,data scientist
+475,Data Scientist,2.9,"Pragmatics, Inc.",United States,Company - Private,IT Services,Information Technology,31,56,43,US,35,data scientist
+476,Decision Scientist,4.5,Johns Hopkins University Applied Physics Laboratory,"Laurel, MD",Nonprofit Organization,Aerospace & Defense,Aerospace & Defense,31,56,43,MD,78,na
+477,Data Scientist,4.9,Cambridge Mobile Telematics,"Cambridge, MA",Company - Private,Enterprise Software & Network Solutions,Information Technology,31,56,43,MA,10,data scientist
+478,Data Scientist - TS/SCI FSP or CI Required,5,Phoenix Operations Group,"Annapolis Junction, MD",Company - Private,IT Services,Information Technology,31,56,43,MD,9,data scientist
+479,"Data Scientist, Applied Machine Learning - Bay Area",3.3,Tempus Labs,"Redwood City, CA",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,95,119,107,CA,5,data scientist
+480,Data Scientist,3.5,The Knot Worldwide,"Washington, DC",Company - Private,Internet,Information Technology,95,119,107,DC,1,data scientist
+481,Data Scientist,3.5,Crossover Health,"San Clemente, CA",Company - Private,Health Care Services & Hospitals,Health Care,95,119,107,CA,10,data scientist
+482,Data Scientist,4,Lorven Technologies Inc,"New York, NY",Company - Private,Accounting,Accounting & Legal,95,119,107,NY,-1,data scientist
+483,Data Analyst,3.9,Nolij Consulting,"Falls Church, VA",Company - Public,Consulting,Business Services,95,119,107,VA,8,analyst
+484,Data Scientist,3.4,Dice.com,"Newton, MA",Subsidiary or Business Segment,Staffing & Outsourcing,Business Services,95,119,107,MA,30,data scientist
+485,Data Scientist,3.5,Gap Inc.,"San Francisco, CA",Company - Public,"Department, Clothing, & Shoe Stores",Retail,95,119,107,CA,51,data scientist
+486,Data Scientist,4.7,"Tygart Technology, Inc","Washington, DC",Company - Private,-1,-1,95,119,107,DC,-1,data scientist
+487,Data Scientist,0,Hatch Data Inc,"San Francisco, CA",-1,-1,-1,95,119,107,CA,-1,data scientist
+488,Data Scientist,0,Hatch Data Inc,"San Francisco, CA",-1,-1,-1,95,119,107,CA,-1,data scientist
+489,Data Scientist,0,Hatch Data Inc,"San Francisco, CA",-1,-1,-1,95,119,107,CA,-1,data scientist
+490,Data Scientist,0,Hatch Data Inc,"San Francisco, CA",-1,-1,-1,95,119,107,CA,-1,data scientist
+491,Data Scientist,0,Hatch Data Inc,"San Francisco, CA",-1,-1,-1,95,119,107,CA,-1,data scientist
+492,Data Scientist,0,Hatch Data Inc,"San Francisco, CA",-1,-1,-1,95,119,107,CA,-1,data scientist
+493,Data Scientist,4.6,Murray Resources,"The Woodlands, TX",Company - Private,Staffing & Outsourcing,Business Services,95,119,107,TX,32,data scientist
+494,Data Scientist,4,New York Technology Partners,"Seattle, WA",Company - Private,Computer Hardware & Software,Information Technology,95,119,107,WA,21,data scientist
+495,Data Scientist,4,Two95 International Inc.,"Chicago, IL",Company - Private,Staffing & Outsourcing,Business Services,95,119,107,IL,-1,data scientist
+496,Data Scientist,0,Sophinea,"Chantilly, VA",Unknown,-1,-1,95,119,107,VA,-1,data scientist
+497,Data Scientist,4.7,CRS Group,"Chicago, IL",Company - Private,Staffing & Outsourcing,Business Services,95,119,107,IL,26,data scientist
+498,Data Scientist,3.5,Blackstone Talent Group,"San Francisco, CA",Company - Private,Consulting,Business Services,95,119,107,CA,22,data scientist
+499,Data Scientist - TS/SCI Required,5,Phoenix Operations Group,"Baltimore, MD",Company - Private,IT Services,Information Technology,95,119,107,MD,9,data scientist
+500,Senior Principal Data Scientist (Python/R),4.1,Roche,"Pleasanton, CA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,212,331,271,CA,124,data scientist
+501,"Real World Science, Data Scientist",4,AstraZeneca,"Wilmington, DE",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,212,331,271,DE,107,data scientist
+502,Data Scientist,3.6,Creative Circle,United States,Company - Public,Staffing & Outsourcing,Business Services,212,331,271,US,18,data scientist
+503,Data Scientist(s)/Machine Learning Engineer,5,Blue Horizon Tek Solutions,"New York, NY",Company - Private,Staffing & Outsourcing,Business Services,212,331,271,NY,33,data scientist
+504,Senior Data Scientist,3.5,Maxar Technologies,"Herndon, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,212,331,271,VA,-1,data scientist
+505,Data Scientist,4.7,Sharpedge Solutions Inc,"Seattle, WA",Company - Private,Publishing,Media,212,331,271,WA,-1,data scientist
+506,Data Scientist,3.5,Maxar Technologies,"Herndon, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,212,331,271,VA,-1,data scientist
+507,Data Scientist,3.6,Alaka`ina Foundation Family of Companies,"Fort Sam Houston, TX",Government,-1,-1,212,331,271,TX,-1,data scientist
+508,ENGINEER - COMPUTER SCIENTIST - RESEARCH COMPUTER SCIENTIST - SIGNAL PROCESSING - SAN ANTONIO OR,3.9,Southwest Research Institute,"Oklahoma City, OK",Nonprofit Organization,Research & Development,Business Services,212,331,271,OK,73,na
+509,Data Scientist,2.7,Hexagon US Federal,"Lexington Park, MD",Company - Public,Aerospace & Defense,Aerospace & Defense,212,331,271,MD,10,data scientist
+510,Data Science Software Engineer,4.8,Klaviyo,"Boston, MA",Company - Private,Computer Hardware & Software,Information Technology,212,331,271,MA,8,na
+511,"Scientist / Group Lead, Cancer Biology",0,Monte Rosa Therapeutics,"Cambridge, MA",-1,-1,-1,212,331,271,MA,-1,na
+512,Data Scientist,4,Comtech Global Inc,"Washington, DC",Company - Private,"Health, Beauty, & Fitness",Consumer Services,212,331,271,DC,-1,data scientist
+513,Data Scientist,3.8,"Aveshka, Inc.","Washington, DC",Company - Public,IT Services,Information Technology,212,331,271,DC,10,data scientist
+514,"Manager, Field Application Scientist, Southeast",4.2,10x Genomics,"Raleigh, NC",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,212,331,271,NC,8,manager
+515,COMPUTER SCIENTIST - ENGINEER - RESEARCH COMPUTER SCIENTIST - SIGNAL PROCESSING,3.9,Southwest Research Institute,"Dayton, OH",Nonprofit Organization,Research & Development,Business Services,212,331,271,OH,73,na
+516,Data Scientist,0,CompuForce,"New York, NY",Company - Private,-1,-1,212,331,271,NY,-1,data scientist
+517,Data Scientist,4.5,Smith Hanley Associates,"Washington, DC",Company - Private,Staffing & Outsourcing,Business Services,212,331,271,DC,40,data scientist
+518,Scientist - Machine Learning,3.5,Allen Institute,"Seattle, WA",Nonprofit Organization,Research & Development,Business Services,212,331,271,WA,17,mle
+519,Data Scientist,2.7,1-800-Flowers,"New York, NY",Company - Public,Wholesale,Business Services,212,331,271,NY,44,data scientist
+520,Data Scientist,3.5,Aptive,"Washington, DC",Company - Private,Consulting,Business Services,212,331,271,DC,8,data scientist
+521,Data Scientist - Image and Video Analytics,4.9,The Mom Project,"Longmont, CO",Company - Private,Staffing & Outsourcing,Business Services,66,112,89,CO,4,data scientist
+522,Data Scientist,3.6,Powertek,"Washington, DC",Company - Private,IT Services,Information Technology,66,112,89,DC,19,data scientist
+523,Data Scientist,5,JCD Staffing,"Washington, DC",Company - Private,-1,-1,66,112,89,DC,-1,data scientist
+524,Data Scientist,3.1,Bayside Solutions,"Sunnyvale, CA",Company - Private,Staffing & Outsourcing,Business Services,66,112,89,CA,19,data scientist
+525,Senior Data Engineer,3.9,Thumbtack,"San Francisco, CA",Company - Private,Internet,Information Technology,66,112,89,CA,11,data engineer
+526,Data Scientist,3.4,"MILVETS Systems Technology, Inc.","Patuxent, Anne Arundel, MD",Company - Private,IT Services,Information Technology,66,112,89,MD,34,data scientist
+527,Machine Learning Scientist / Engineer,4.1,Apple,"Santa Clara, CA",Company - Public,Computer Hardware & Software,Information Technology,66,112,89,CA,44,mle
+528,Data Scientist,4.1,Kforce,"Fairfax, VA",Company - Public,Staffing & Outsourcing,Business Services,66,112,89,VA,54,data scientist
+529,Sr. Data Scientist,3.5,Evolve Vacation Rental,"Denver, CO",Company - Private,Travel Agencies,Travel & Tourism,66,112,89,CO,9,data scientist
+530,"Intelligence Data Analyst, Senior",4.3,The Buffalo Group,"Fort Belvoir, VA",Company - Private,IT Services,Information Technology,66,112,89,VA,10,analyst
+531,Data Science Analyst,4.4,OppLoans,"Chicago, IL",Company - Private,Lending,Finance,66,112,89,IL,8,analyst
+532,Data Scientist,3.8,AgreeYa Solutions,"Thousand Oaks, CA",Company - Private,IT Services,Information Technology,66,112,89,CA,21,data scientist
+533,Data Scientist,3.7,Carolina Power & Light Co,"McLean, VA",Subsidiary or Business Segment,Energy,"Oil, Gas, Energy & Utilities",66,112,89,VA,112,data scientist
+534,COMPUTER SCIENTIST - ENGINEER - RESEARCH COMPUTER SCIENTIST - TRANSPORTATION TECHNOLOGY,3.9,Southwest Research Institute,"San Antonio, TX",Nonprofit Organization,Research & Development,Business Services,66,112,89,TX,73,na
+535,Data Scientist,3.9,Brillient,"Silver Spring, MD",Company - Private,IT Services,Information Technology,66,112,89,MD,14,data scientist
+536,Data Modeler (Analytical Systems),3.7,MassMutual,"Boston, MA",Company - Private,Insurance Carriers,Insurance,66,112,89,MA,169,na
+537,Data Scientist,2.9,Xator Corporation,"Washington, DC",Contract,IT Services,Information Technology,66,112,89,DC,-1,data scientist
+538,Data Scientist,4.6,HAN IT Staffing Inc.,"New York, NY",Company - Private,IT Services,Information Technology,66,112,89,NY,8,data scientist
+539,Data Scientist,3.4,Infinitive Inc,"McLean, VA",Company - Private,Enterprise Software & Network Solutions,Information Technology,66,112,89,VA,23,data scientist
+540,"Data Engineer (Analytics, SQL, Python, AWS)",4,Travelers,"Hartford, CT",Company - Public,Insurance Carriers,Insurance,66,112,89,CT,167,data engineer
+541,Data Scientist 3 (718),3.3,Amyris,"Emeryville, CA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,128,201,164,CA,17,data scientist
+542,Data Scientist,4.3,Lightspeed Systems,"Austin, TX",Company - Private,Computer Hardware & Software,Information Technology,128,201,164,TX,21,data scientist
+543,Senior Data Scientist,3.9,Thumbtack,"San Francisco, CA",Company - Private,Internet,Information Technology,128,201,164,CA,11,data scientist
+544,Senior Data Analyst - Finance & Platform Analytics,3.6,Twitch,"San Francisco, CA",Subsidiary or Business Segment,Internet,Information Technology,128,201,164,CA,9,analyst
+545,Software Engineer - Machine Learning & Data Science (Applied Intelligence Services Team),4.7,New Relic,"Portland, OR",Company - Public,Computer Hardware & Software,Information Technology,128,201,164,OR,12,mle
+546,IT Partner Digital Health Technology and Data Science,3.6,Biogen,"Cambridge, MA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,128,201,164,MA,42,na
+547,Data Scientist,0,HireAi,"San Francisco, CA",-1,-1,-1,128,201,164,CA,-1,data scientist
+548,"Senior Machine Learning Scientist - Bay Area, CA",3.3,Tempus Labs,"Redwood City, CA",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,128,201,164,CA,5,mle
+549,Data Scientist,3.3,ICW Group,"San Diego, CA",Company - Private,Insurance Carriers,Insurance,128,201,164,CA,48,data scientist
+550,Clinical Data Analyst,3.8,NYSTEC,"New York, NY",Nonprofit Organization,Consulting,Business Services,128,201,164,NY,24,analyst
+551,Data Scientist,4.5,E3 Federal Solutions,"Chantilly, VA",Company - Private,Consulting,Business Services,128,201,164,VA,16,data scientist
+552,Data Engineer,4.5,Kingfisher Systems,"Falls Church, VA",Company - Private,Federal Agencies,Government,128,201,164,VA,15,data engineer
+553,Data Scientist Technical Specialist,3.4,Peraton,"Chantilly, VA",Company - Private,Aerospace & Defense,Aerospace & Defense,128,201,164,VA,3,data scientist
+554,Senior Data Scientist,3.1,Group O,"Chicago, IL",Company - Private,Staffing & Outsourcing,Business Services,128,201,164,IL,46,data scientist
+555,Data Science Manager,4,Autodesk,"San Francisco, CA",Company - Public,Computer Hardware & Software,Information Technology,128,201,164,CA,38,manager
+556,Computer Vision / Deep Learning Scientist,3.3,Tempus Labs,"Chicago, IL",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,128,201,164,IL,5,na
+557,Big Data Engineer,4.1,CaptiveAire,"Raleigh, NC",Company - Private,Industrial Manufacturing,Manufacturing,128,201,164,NC,44,data engineer
+558,Data Architect,4.2,LSQ,"Orlando, FL",Company - Private,Investment Banking & Asset Management,Finance,128,201,164,FL,24,na
+559,Machine Learning Engineer,3.9,Temboo,"New York, NY",Company - Private,IT Services,Information Technology,128,201,164,NY,-1,mle
+560,Data Scientist,0,Kibo,"Philadelphia, PA",Company - Public,-1,-1,128,201,164,PA,-1,data scientist
+561,Aviation AI/ML Data Scientist,3.3,MITRE,"McLean, VA",Nonprofit Organization,Federal Agencies,Government,128,201,164,VA,62,data scientist
+562,Data Scientist,3.9,Mars,United States,Company - Private,Food & Beverage Manufacturing,Manufacturing,138,158,148,US,109,data scientist
+563,Data Scientist / Applied Mathematician,4.5,"Fullpower Technologies, Inc.","Santa Cruz, CA",Company - Private,Computer Hardware & Software,Information Technology,138,158,148,CA,17,data scientist
+564,"Machine Learning Engineer, Sr.",4.2,AeroVironment,"Simi Valley, CA",Company - Public,Aerospace & Defense,Aerospace & Defense,138,158,148,CA,49,mle
+565,Data Scientist (TS/SCI w/ Poly),3.5,Maxar Technologies,"Herndon, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,138,158,148,VA,-1,data scientist
+566,Weapons and Sensors Engineer/Scientist,4,Dynetics,"Huntsville, AL",Company - Private,Aerospace & Defense,Aerospace & Defense,138,158,148,AL,46,na
+567,Applied Computer Scientist,4.5,Systems & Technology Research,"Woburn, MA",Company - Private,Aerospace & Defense,Aerospace & Defense,138,158,148,MA,10,na
+568,Senior Data Analyst,4.5,Novetta,"Herndon, VA",Company - Private,Enterprise Software & Network Solutions,Information Technology,138,158,148,VA,8,analyst
+569,Information Systems Engineering Specialist (Engineering Scientist),3.8,Applied Research Laboratories,"Austin, TX",College / University,Colleges & Universities,Education,138,158,148,TX,-1,na
+570,Cloud Data Engineer (Azure),3.9,Navy Federal Credit Union,"Merrifield, VA",Other Organization,Banks & Credit Unions,Finance,138,158,148,VA,87,data engineer
+571,Scientist/Research Associate-Metabolic Engineering,2,Conagen,"New Bedford, MA",Company - Private,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,138,158,148,MA,-1,na
+572,"Vice President, Biometrics and Clinical Data Management",4.8,Alector,"South San Francisco, CA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,138,158,148,CA,7,na
+573,Enterprise Data Analyst (Enterprise Portfolio Management Office),3.9,Navy Federal Credit Union,"Merrifield, VA",Other Organization,Banks & Credit Unions,Finance,138,158,148,VA,87,analyst
+574,Senior Scientist - Toxicologist - Product Integrity (Stewardship),3.3,Reynolds American,"Winston-Salem, NC",Company - Private,Consumer Products Manufacturing,Manufacturing,138,158,148,NC,145,na
+575,Lead Data Scientist – Network Analysis and Control,3.3,MITRE,"Bedford, MA",Nonprofit Organization,Federal Agencies,Government,138,158,148,MA,62,data scientist
+576,Senior Machine Learning Engineer,5,LifeOmic,"Raleigh, NC",Company - Private,Enterprise Software & Network Solutions,Information Technology,138,158,148,NC,4,mle
+577,"Sr. Research Associate/ Scientist, NGS prep & Molecular Genomics",4.4,"Homology Medicines, Inc.","New Bedford, MA",Company - Public,-1,-1,138,158,148,MA,-1,na
+578,Data Engineer,3.4,Spectrum Communications and Consulting,"Chicago, IL",Company - Private,Advertising & Marketing,Business Services,138,158,148,IL,28,data engineer
+579,Developer III - Data Science,3.3,Inland Empire Health Plan,"Rancho Cucamonga, CA",Company - Public,Health Care Services & Hospitals,Health Care,138,158,148,CA,24,na
+580,Senior Data Engineer,2.9,Affinity Solutions,"New York, NY",Company - Private,Advertising & Marketing,Business Services,138,158,148,NY,22,data engineer
+581,Hydrogen/Tritium Materials Scientist (Experienced),3.8,Sandia National Laboratories,"Livermore, CA",Government,Federal Agencies,Government,138,158,148,CA,71,na
+582,Data Engineer,3.5,Maxar Technologies,"McLean, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,138,158,148,VA,-1,data engineer
+583,Patient Safety- Associate Data Scientist,4,AstraZeneca,"Gaithersburg, MD",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,80,132,106,MD,107,data scientist
+584,Senior Data Scientist,4,Autodesk,"San Francisco, CA",Company - Public,Computer Hardware & Software,Information Technology,80,132,106,CA,38,data scientist
+585,Data Scientist,3.4,USI,"Southfield, MI",Company - Private,Construction,"Construction, Repair & Maintenance",80,132,106,MI,22,data scientist
+586,Data Scientist,3.9,GSK,"Collegeville, PA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,80,132,106,PA,190,data scientist
+587,Data Scientist,3.8,CIA,"Washington, DC",Government,Federal Agencies,Government,80,132,106,DC,73,data scientist
+588,Data Scientist,4.5,Maven Wave Partners,"Chicago, IL",Company - Private,Consulting,Business Services,80,132,106,IL,12,data scientist
+589,Data Scientist,4.3,Ovative Group,"Minneapolis, MN",Company - Private,Advertising & Marketing,Business Services,80,132,106,MN,11,data scientist
+590,Data Scientist,3.6,Kognetics,"Gahanna, OH",Company - Private,-1,-1,80,132,106,OH,-1,data scientist
+591,Data Scientist,2.9,Envision Healthcare,"Nashville, TN",Company - Private,Health Care Services & Hospitals,Health Care,80,132,106,TN,15,data scientist
+592,Data Scientist,2.9,"Pragmatics, Inc.",United States,Company - Private,IT Services,Information Technology,80,132,106,US,35,data scientist
+593,Decision Scientist,4.5,Johns Hopkins University Applied Physics Laboratory,"Laurel, MD",Nonprofit Organization,Aerospace & Defense,Aerospace & Defense,80,132,106,MD,78,na
+594,Data Scientist - TS/SCI FSP or CI Required,5,Phoenix Operations Group,"Annapolis Junction, MD",Company - Private,IT Services,Information Technology,80,132,106,MD,9,data scientist
+595,Data Scientist,3.5,Crossover Health,"San Clemente, CA",Company - Private,Health Care Services & Hospitals,Health Care,80,132,106,CA,10,data scientist
+596,Data Scientist,4,Lorven Technologies Inc,"New York, NY",Company - Private,Accounting,Accounting & Legal,80,132,106,NY,-1,data scientist
+597,Data Scientist,4.4,Meridian Knowledge Solutions,"Washington, DC",Subsidiary or Business Segment,Enterprise Software & Network Solutions,Information Technology,80,132,106,DC,23,data scientist
+598,Data Scientist,4.2,UST Global,"Atlanta, GA",Company - Private,IT Services,Information Technology,80,132,106,GA,21,data scientist
+599,Data Scientist,3.2,IMG Systems,"Plano, TX",Company - Private,Consulting,Business Services,80,132,106,TX,-1,data scientist
+600,Data Scientist,3.4,Trident Systems Inc,"Fairfax, VA",Company - Private,Aerospace & Defense,Aerospace & Defense,80,132,106,VA,35,data scientist
+601,Data Scientist,4.7,"Tygart Technology, Inc","Washington, DC",Company - Private,-1,-1,80,132,106,DC,-1,data scientist
+602,Senior Data Scientist,4.2,ManTech,"Alexandria, VA",Company - Public,Research & Development,Business Services,87,141,114,VA,52,data scientist
+603,Data Scientist,0,"GrainBridge, LLC","Omaha, NE",-1,-1,-1,87,141,114,NE,-1,data scientist
+604,Data Scientist,3.2,First Health Group,"Wellesley, MA",Company - Private,Insurance Carriers,Insurance,87,141,114,MA,167,data scientist
+605,Data Scientist,0,Sprezzatura Management Consulting,"Washington, VA",Company - Private,-1,-1,87,141,114,VA,-1,data scientist
+606,Data Scientist,2.8,"Progress Rail, A Caterpillar Company","Fort Worth, TX",Subsidiary or Business Segment,Rail,Transportation & Logistics,87,141,114,TX,37,data scientist
+607,Data Scientist,4.2,UST Global,"Atlanta, GA",Company - Private,IT Services,Information Technology,87,141,114,GA,21,data scientist
+608,Data Scientist,4.5,Axiologic Solutions,"Alexandria, VA",Company - Private,Aerospace & Defense,Aerospace & Defense,87,141,114,VA,11,data scientist
+609,Data Scientist,3,Indigo Slate,"Bellevue, WA",Company - Private,Consulting,Business Services,87,141,114,WA,14,data scientist
+610,Data Scientist,3.3,Cubic,United States,Company - Public,Aerospace & Defense,Aerospace & Defense,87,141,114,US,69,data scientist
+611,Data Scientist,4,Advanced Bio-Logic Solutions Corp,"Thousand Oaks, CA",Company - Private,-1,-1,87,141,114,CA,-1,data scientist
+612,Data Engineer,3.5,Alignment Healthcare,"Orange, CA",Company - Private,Health Care Services & Hospitals,Health Care,87,141,114,CA,7,data engineer
+613,Data Scientist,3.5,WGSN,"Baltimore, MD",Company - Private,Consulting,Business Services,87,141,114,MD,22,data scientist
+614,Data Scientist,3.6,"ISYS Technologies, Inc.","Herndon, VA",Company - Private,Computer Hardware & Software,Information Technology,87,141,114,VA,30,data scientist
+615,Data Scientist,3,TransVoyant,"Alexandria, VA",Company - Private,Enterprise Software & Network Solutions,Information Technology,87,141,114,VA,8,data scientist
+616,Data Scientist/Data Analytics Practitioner,4,Noblis,"Bridgeport, WV",Nonprofit Organization,Consulting,Business Services,87,141,114,WV,24,data scientist
+617,Data Scientist,4.6,Murray Resources,"The Woodlands, TX",Company - Private,Staffing & Outsourcing,Business Services,87,141,114,TX,32,data scientist
+618,Data Scientist,4.3,Geotab,"Oakville, CA",Company - Private,Computer Hardware & Software,Information Technology,87,141,114,CA,20,data scientist
+619,Data Scientist,4.7,CRS Group,"Chicago, IL",Company - Private,Staffing & Outsourcing,Business Services,87,141,114,IL,26,data scientist
+620,Data Scientist,3.7,EGlobalTech,"Arlington, VA",Company - Private,IT Services,Information Technology,87,141,114,VA,16,data scientist
+621,"Data Scientist, Kinship - NYC/Portland",3.9,Mars,"New York, NY",Company - Private,Food & Beverage Manufacturing,Manufacturing,92,155,123,NY,109,data scientist
+622,Data Scientist,3,"Central Business Solutions, Inc","Seattle, WA",Company - Private,Consulting,Business Services,92,155,123,WA,-1,data scientist
+623,Data Scientist,2.5,KeHE Distributors,"Naperville, IL",Company - Private,Wholesale,Business Services,92,155,123,IL,66,data scientist
+624,Data Scientist,3.5,Blackstone Talent Group,"San Francisco, CA",Company - Private,Consulting,Business Services,92,155,123,CA,22,data scientist
+625,Data Scientist - TS/SCI Required,5,Phoenix Operations Group,"Baltimore, MD",Company - Private,IT Services,Information Technology,92,155,123,MD,9,data scientist
+626,Data Scientist,0,Sophinea,"Chantilly, VA",Unknown,-1,-1,92,155,123,VA,-1,data scientist
+627,Senior Data Scientist,3.5,Maxar Technologies,"Herndon, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,92,155,123,VA,-1,data scientist
+628,Data Scientist,3,Moxie Software,"Bellevue, WA",Company - Private,Enterprise Software & Network Solutions,Information Technology,92,155,123,WA,21,data scientist
+629,Data Scientist(s)/Machine Learning Engineer,5,Blue Horizon Tek Solutions,"New York, NY",Company - Private,Staffing & Outsourcing,Business Services,92,155,123,NY,33,data scientist
+630,Data Scientist,4.7,Unicom Technologies INC,"Chicago, IL",Company - Private,IT Services,Information Technology,92,155,123,IL,-1,data scientist
+631,Data Engineer,3.3,Americo Life,"Kansas City, MO",Company - Private,Insurance Carriers,Insurance,92,155,123,MO,28,data engineer
+632,Data Scientist,3.3,Tokio Marine HCC,"Houston, TX",Company - Private,Insurance Carriers,Insurance,92,155,123,TX,46,data scientist
+633,Data Scientist,3.5,CACI International,"Chantilly, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,92,155,123,VA,58,data scientist
+634,"AI/ML - Machine Learning Scientist, Siri Understanding",4.1,Apple,"Santa Clara, CA",Company - Public,Computer Hardware & Software,Information Technology,92,155,123,CA,44,mle
+635,Data Scientist,3.5,Maxar Technologies,"Herndon, VA",Company - Public,Aerospace & Defense,Aerospace & Defense,92,155,123,VA,-1,data scientist
+636,ENGINEER - COMPUTER SCIENTIST - RESEARCH COMPUTER SCIENTIST - SIGNAL PROCESSING - SAN ANTONIO OR,3.9,Southwest Research Institute,"Oklahoma City, OK",Nonprofit Organization,Research & Development,Business Services,92,155,123,OK,73,na
+637,Data Scientist,4.7,Compass Consulting Group,"Thousand Oaks, CA",Company - Private,Consulting,Business Services,92,155,123,CA,12,data scientist
+638,Data Science Software Engineer,4.8,Klaviyo,"Boston, MA",Company - Private,Computer Hardware & Software,Information Technology,92,155,123,MA,8,na
+639,"Scientist / Group Lead, Cancer Biology",0,Monte Rosa Therapeutics,"Cambridge, MA",-1,-1,-1,92,155,123,MA,-1,na
+640,AI Ops Data Scientist,4,AstraZeneca,"Gaithersburg, MD",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,92,155,123,MD,107,data scientist
+641,Senior Data Scientist,3.8,GutCheck,"Denver, CO",Company - Private,Advertising & Marketing,Business Services,105,167,136,CO,11,data scientist
+642,Sr. ML/Data Scientist - AI/NLP/Chatbot,3.8,Juniper Networks,"Cupertino, CA",Company - Public,Telecommunications Services,Telecommunications,105,167,136,CA,24,data scientist
+643,Data Scientist,2.7,Hexagon US Federal,"Lexington Park, MD",Company - Public,Aerospace & Defense,Aerospace & Defense,105,167,136,MD,10,data scientist
+644,Data Scientist,4,Comtech Global Inc,"Washington, DC",Company - Private,"Health, Beauty, & Fitness",Consumer Services,105,167,136,DC,-1,data scientist
+645,Data Scientist,0,Berico Technologies,"Fort Belvoir, VA",-1,-1,-1,105,167,136,VA,-1,data scientist
+646,Data Scientist,0,Kehe Food Distributors,"Naperville, IL",-1,-1,-1,105,167,136,IL,-1,data scientist
+647,Data Scientist,3.8,"Aveshka, Inc.","Washington, DC",Company - Public,IT Services,Information Technology,105,167,136,DC,10,data scientist
+648,Data Scientist,3.2,Perspecta,"Adelphi, MD",Company - Public,Aerospace & Defense,Aerospace & Defense,105,167,136,MD,2,data scientist
+649,Data Scientist,0,Pactera Edge,"Redmond, WA",-1,-1,-1,105,167,136,WA,-1,data scientist
+650,Data Scientist,3.6,Qurate Retail Group,"West Chester, PA",Company - Public,Other Retail Stores,Retail,105,167,136,PA,-1,data scientist
+651,Data Scientist,4.4,"SolutionIT, Inc.","Edison, NJ",Company - Private,-1,-1,105,167,136,NJ,-1,data scientist
+652,Data Scientist,4.1,A-Line Staffing Solutions,"Durham, NC",Company - Private,Staffing & Outsourcing,Business Services,105,167,136,NC,16,data scientist
+653,Data Scientist,0,Clear Ridge Defense,"Quantico, VA",Company - Private,-1,-1,105,167,136,VA,-1,data scientist
+654,Data Scientist,3.8,"Criterion Systems, Inc.","Vienna, VA",Company - Private,IT Services,Information Technology,105,167,136,VA,15,data scientist
+655,Data Scientist,4,Foundation Medicine,"Boston, MA",Company - Public,Biotech & Pharmaceuticals,Biotech & Pharmaceuticals,105,167,136,MA,10,data scientist
+656,Data Scientist,3.6,TRANZACT,"Fort Lee, NJ",Company - Private,Advertising & Marketing,Business Services,105,167,136,NJ,31,data scientist
+657,Data Scientist,0,JKGT,"San Francisco, CA",-1,-1,-1,105,167,136,CA,-1,data scientist
+658,Data Scientist,0,AccessHope,"Irwindale, CA",-1,-1,-1,105,167,136,CA,-1,data scientist
+659,Data Scientist,5,ChaTeck Incorporated,"San Francisco, CA",Company - Private,Advertising & Marketing,Business Services,105,167,136,CA,-1,data scientist
+660,Data Scientist,2.7,1-800-Flowers,"New York, NY",Company - Public,Wholesale,Business Services,105,167,136,NY,44,data scientist
