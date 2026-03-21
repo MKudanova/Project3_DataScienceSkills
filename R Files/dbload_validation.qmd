@@ -1,0 +1,102 @@
+---
+title: "Database Loading and Validation Checks"
+author: "Muhammad Suffyan Khan"
+format: html
+editor: visual
+---
+
+## Code Part for DB load and some validation checks before actual analysis.
+
+```{r}
+library(DBI)
+library(RPostgres)
+library(dplyr)
+
+# 1. Connect to PostgreSQL
+con <- dbConnect(
+  RPostgres::Postgres(),
+  dbname = "project3_datascience_skills", #change if needed
+  host = "localhost",
+  port = 5432,
+  user = "postgres",
+  password = readline(prompt = "Enter DB password: ")
+)
+
+# 2. Set schema
+dbExecute(con, "SET search_path TO project3;")
+
+# 3. Load tables and view
+jobs <- dbReadTable(con, Id(schema = "project3", table = "jobs"))
+skills <- dbReadTable(con, Id(schema = "project3", table = "skills"))
+job_skills <- dbReadTable(con, Id(schema = "project3", table = "job_skills"))
+job_skill_details <- dbReadTable(con, Id(schema = "project3", table = "vw_job_skill_details"))
+
+# 4. Basic structure checks
+cat("Rows/Cols:\n")
+cat("jobs:", nrow(jobs), "rows,", ncol(jobs), "cols\n")
+cat("skills:", nrow(skills), "rows,", ncol(skills), "cols\n")
+cat("job_skills:", nrow(job_skills), "rows,", ncol(job_skills), "cols\n")
+cat("vw_job_skill_details:", nrow(job_skill_details), "rows,", ncol(job_skill_details), "cols\n\n")
+
+# 5. Preview data
+cat("Preview: jobs\n")
+print(head(jobs, 5))
+
+cat("\nPreview: skills\n")
+print(head(skills, 5))
+
+cat("\nPreview: job_skills\n")
+print(head(job_skills, 5))
+
+cat("\nPreview: vw_job_skill_details\n")
+print(head(job_skill_details, 5))
+
+# 6. Key checks
+cat("\nValidation checks:\n")
+
+cat("Duplicate job_id in jobs:",
+    sum(duplicated(jobs$job_id)), "\n")
+
+cat("Duplicate skill_id in skills:",
+    sum(duplicated(skills$skill_id)), "\n")
+
+cat("Duplicate (job_id, skill_id) pairs in job_skills:",
+    sum(duplicated(job_skills[, c("job_id", "skill_id")])), "\n")
+
+cat("Missing job_id in jobs:",
+    sum(is.na(jobs$job_id)), "\n")
+
+cat("Missing skill_id in skills:",
+    sum(is.na(skills$skill_id)), "\n")
+
+cat("Missing IDs in job_skills:",
+    sum(is.na(job_skills$job_id)) + sum(is.na(job_skills$skill_id)), "\n")
+
+# 7. Referential integrity checks
+missing_job_ids <- anti_join(job_skills, jobs, by = "job_id")
+missing_skill_ids <- anti_join(job_skills, skills, by = "skill_id")
+
+cat("Unmatched job_id values in job_skills:", nrow(missing_job_ids), "\n")
+cat("Unmatched skill_id values in job_skills:", nrow(missing_skill_ids), "\n")
+
+# 8. Jobs without matched skills
+jobs_without_skills <- jobs %>%
+  anti_join(job_skills, by = "job_id")
+
+cat("Jobs without matched skills:", nrow(jobs_without_skills), "\n")
+
+# 9. Quick summary counts
+cat("\nSummary counts:\n")
+cat("Unique jobs in job_skills:", n_distinct(job_skills$job_id), "\n")
+cat("Unique skills in job_skills:", n_distinct(job_skills$skill_id), "\n")
+
+# 10. Top skills check
+top_skills_check <- job_skill_details %>%
+  count(skill_name, sort = TRUE)
+
+cat("\nTop skills preview:\n")
+print(head(top_skills_check, 10))
+
+# 11. Disconnect (after all analysis and everything)
+dbDisconnect(con)
+```
