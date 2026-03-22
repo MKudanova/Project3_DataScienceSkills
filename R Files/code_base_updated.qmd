@@ -1,14 +1,15 @@
 ---
-title: "Project 3:"
+title: "Project 3:Most Valued Data Science Skills" 
+author: "Madina Kudanova, Muhammad Khan, Leon Lin, Xiaofei Mei"
 format: html
 editor: visual
 ---
 
 ## Introduction
 
-The project Most Valued Data Science Skills aims to investigate which technical skills are most valued in the data science job market. As the demand for data science professionals has grown significantly over the last decade, it is important to understand which tools, programming languages, and analytical skills are most frequently required by employers.
+This project investigated which technical skills are most valued in the data science job market. As the demand for data science professionals has grown significantly over the last decade, it is important to understand which tools, programming languages, and analytical skills are most frequently required by employers.
 
-To explore this question, the project will analyze datasets containing job postings for data science related roles. Job postings provide insight into employer expectations because they typically list the technical skills required for each position. In this project, the frequency of skills listed in job postings will be used as a proxy for measuring the demand for specific data science skills.
+To explore this question, the project analyzed a dataset containing job postings for data science-related roles. Job postings provide insight into employer expectations because they typically list the technical skills required for each position. In this project, the frequency of skills listed in job postings was used as a proxy for measuring the demand for specific data science skills.
 
 ## Approach
 
@@ -24,31 +25,39 @@ To explore this question, the project will analyze datasets containing job posti
 
 ### Communication
 
-Our team will communicate primarily through WhatsApp/Slack group chats and school email to coordinate meetings, discuss progress, and share quick updates related to the project.
+Our team communicate primarily through WhatsApp/Slack group chats and school email to coordinate meetings, discuss progress, and share quick updates related to the project.
 
 ### Code and File Sharing
 
-A shared GitHub repository <https://github.com/MKudanova/Project3_DataScienceSkills/tree/main> will be used to store project code, scripts, and datasets.
+A shared GitHub repository <https://github.com/MKudanova/Project3_DataScienceSkills/tree/main> is being used to store project code, scripts, and datasets.
 
 ### Project Documentation
 
-A shared Google Docs document will be used to collaboratively write project notes and draft written sections of the project before final versions are uploaded to the GitHub repository.
+A shared Google Docs document is being used to collaboratively write project notes and draft written sections of the project before final versions are uploaded to the GitHub repository.
 
 ### Data Sources
 
-The data will most likely be obtained from Kaggle, a platform that hosts publicly available datasets. These datasets often contain job postings collected from major job platforms such as LinkedIn, Indeed, and Glassdoor. We may also explore other data sources such as BigQuery or the U.S. government open data portal if they provide relevant datasets.
+We obtained the data from Kaggle. The data was scraped from Glassdoor with information such as job title, job description, company information, industry. Skills required mostly can be listed through the job description column.
 
 ### Data Loading and Database Design
 
-After obtaining the dataset, it will be downloaded in CSV format and loaded into a relational database. The database will follow a normalized structure to organize the data efficiently. Because one job posting can require multiple skills and a single skill may appear in multiple job postings, the database will use a many-to-many relationship between jobs and skills. The initial design might include three tables: Jobs (job_id, job_title, company, location), Skills (skill_id, skill_name), and Job_Skills (job_id, skill_id). The data will then be accessed from R for cleaning, tidying, and exploratory analysis. The database structure may be adjusted. The relational database will be implemented using PostgreSQL, managed through pgAdmin. SQL scripts used to create the database schema, tables, and relationships will be included in the project’s GitHub repository to ensure reproducibility and transparency of the data loading process.
+We built a relational PostgreSQL database to organize the dataset using a normalized structure. We defined tables, primary keys, and relationships to ensure data integrity and reduce redundancy.
+
+Because one job posting can require multiple skills and a single skill may appear in multiple job postings, we implemented a many-to-many relationship between jobs and skills.
+
+The database included three tables: Jobs (job_id, job_title, company, location), Skills (skill_id, skill_name), and Job_Skills (job_id, skill_id). The Job_Skills table served as a bridge table with foreign keys referencing both Jobs and Skills.
+
+We used SQL to create the schema and manage the database in pgAdmin4. The data were then accessed from PostgreSQL in R using the RPostgres package for querying and analysis.
 
 ### ER Diagram
 
-To document the structure of the database, the project will include an Entity–Relationship (ER) diagram illustrating the relationships between the tables in the normalized database. It will represent the relationships between the jobs and skills tables. The diagram will most likely be created using a visual diagramming tool such as draw.io (diagrams.net) or another diagram tool. The ER diagram may be refined after the dataset is examined and the final database schema is implemented.
+An Entity–Relationship (ER) diagram was created to document the structure of the database. It illustrates the relationships between the **Jobs**, **Skills**, and **Job_Skills** tables, showing how the bridge table resolves the many-to-many relationship between jobs and skills. The diagram was created using **draw.io**
 
 ### Exploratory Analysis and Visualization
 
-After the data are cleaned and transformed in R, exploratory data analysis will be conducted to examine the frequency of different data science skills across job postings. Visualizations such as bar charts, frequency plots, and comparative graphs will be created to illustrate which programming languages, tools, and technologies appear most frequently in job listings. These visualizations will help communicate the relative demand for different data science skills in an intuitive and interpretable way.
+After cleaning the data in R, we explored which skills appeared most often in job postings, how they relate to salary, and how they vary across sectors. We created visualizations such as bar charts to show the most common skills and scatter plots to compare skill demand with average salary.
+
+These visuals made it easier to understand which data science skills are most in demand, how they are valued in the job market, and how they differ by sector.
 
 ## Code base
 
@@ -72,20 +81,8 @@ con <- dbConnect(
   password = ""  
   
 )
-```
-
-```{r}
-# Set the active schema to "project3"
-# This allows us to reference tables without writing "project3." every time
+# Set schema to project3 so we can access our tables
 dbExecute(con, "SET search_path TO project3;")
-
-# Retrieve a list of all tables in the database
-# This helps verify that our tables (jobs, skills, job_skills) exist and are accessible
-dbGetQuery(con, "
-SELECT table_schema, table_name
-FROM information_schema.tables
-ORDER BY table_schema, table_name;
-")
 ```
 
 ## Verify Connection
@@ -278,7 +275,7 @@ p3 <- ggplot(it_skills, aes(x = reorder(skill_name, percent), y = percent)) +
   geom_col(fill = "lightblue") +
   coord_flip() +
   labs(
-    title = "Top Skills in Information Technology",
+    title = "Top Skills in IT",
     x = "Skill",
     y = "    
     Percentage of Skill 
