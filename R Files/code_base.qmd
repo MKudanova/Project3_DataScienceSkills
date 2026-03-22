@@ -78,6 +78,11 @@ con <- dbConnect(
   password = Sys.getenv("PGPASSWORD")   
 )
 
+job_skill_details <- dbGetQuery(con, "SELECT * FROM project3.vw_job_skill_details")
+jobs <- dbGetQuery(con, "SELECT * FROM project3.jobs")
+skills <- dbGetQuery(con, "SELECT * FROM project3.skills")
+job_skills <- dbGetQuery(con, "SELECT * FROM project3.job_skills")
+
 ```
 
 ### Data Preview and Validation
@@ -97,6 +102,9 @@ names(job_skill_details)
 ### Skill Demand Analysis
 
 ```{r}
+skill_counts_df <- job_skill_details %>%
+  count(skill_name, sort = TRUE)
+
 # Plot the frequency of each skill across all job postings
 ggplot(skill_counts_df, aes(x = reorder(skill_name, n), y = n)) +
   geom_col(fill = "orange") +
