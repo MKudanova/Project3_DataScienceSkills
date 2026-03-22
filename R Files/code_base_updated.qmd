@@ -1,0 +1,297 @@
+---
+title: "Project 3:"
+format: html
+editor: visual
+---
+
+## Introduction
+
+The project Most Valued Data Science Skills aims to investigate which technical skills are most valued in the data science job market. As the demand for data science professionals has grown significantly over the last decade, it is important to understand which tools, programming languages, and analytical skills are most frequently required by employers.
+
+To explore this question, the project will analyze datasets containing job postings for data science related roles. Job postings provide insight into employer expectations because they typically list the technical skills required for each position. In this project, the frequency of skills listed in job postings will be used as a proxy for measuring the demand for specific data science skills.
+
+## Approach
+
+### Team members
+
+-   Madina Kudanova
+
+-   Muhammad Khan
+
+-   Leon Lin
+
+-   Xiaofei Mei
+
+### Communication
+
+Our team will communicate primarily through WhatsApp/Slack group chats and school email to coordinate meetings, discuss progress, and share quick updates related to the project.
+
+### Code and File Sharing
+
+A shared GitHub repository <https://github.com/MKudanova/Project3_DataScienceSkills/tree/main> will be used to store project code, scripts, and datasets.
+
+### Project Documentation
+
+A shared Google Docs document will be used to collaboratively write project notes and draft written sections of the project before final versions are uploaded to the GitHub repository.
+
+### Data Sources
+
+The data will most likely be obtained from Kaggle, a platform that hosts publicly available datasets. These datasets often contain job postings collected from major job platforms such as LinkedIn, Indeed, and Glassdoor. We may also explore other data sources such as BigQuery or the U.S. government open data portal if they provide relevant datasets.
+
+### Data Loading and Database Design
+
+After obtaining the dataset, it will be downloaded in CSV format and loaded into a relational database. The database will follow a normalized structure to organize the data efficiently. Because one job posting can require multiple skills and a single skill may appear in multiple job postings, the database will use a many-to-many relationship between jobs and skills. The initial design might include three tables: Jobs (job_id, job_title, company, location), Skills (skill_id, skill_name), and Job_Skills (job_id, skill_id). The data will then be accessed from R for cleaning, tidying, and exploratory analysis. The database structure may be adjusted. The relational database will be implemented using PostgreSQL, managed through pgAdmin. SQL scripts used to create the database schema, tables, and relationships will be included in the project’s GitHub repository to ensure reproducibility and transparency of the data loading process.
+
+### ER Diagram
+
+To document the structure of the database, the project will include an Entity–Relationship (ER) diagram illustrating the relationships between the tables in the normalized database. It will represent the relationships between the jobs and skills tables. The diagram will most likely be created using a visual diagramming tool such as draw.io (diagrams.net) or another diagram tool. The ER diagram may be refined after the dataset is examined and the final database schema is implemented.
+
+### Exploratory Analysis and Visualization
+
+After the data are cleaned and transformed in R, exploratory data analysis will be conducted to examine the frequency of different data science skills across job postings. Visualizations such as bar charts, frequency plots, and comparative graphs will be created to illustrate which programming languages, tools, and technologies appear most frequently in job listings. These visualizations will help communicate the relative demand for different data science skills in an intuitive and interpretable way.
+
+## Code base
+
+```{r setup, message=FALSE}
+library(DBI)
+library(RPostgres)
+library(tidyverse)
+library(patchwork)
+```
+
+## Connect to PostgreSQL Database
+
+```{r}
+# Establish connection to local PostgreSQL database
+con <- dbConnect(
+  RPostgres::Postgres(),
+  dbname = "project3_skills",
+  host = "localhost",
+  port = 5432,
+  user = "postgres",
+  password = ""  
+  
+)
+```
+
+```{r}
+# Set the active schema to "project3"
+# This allows us to reference tables without writing "project3." every time
+dbExecute(con, "SET search_path TO project3;")
+
+# Retrieve a list of all tables in the database
+# This helps verify that our tables (jobs, skills, job_skills) exist and are accessible
+dbGetQuery(con, "
+SELECT table_schema, table_name
+FROM information_schema.tables
+ORDER BY table_schema, table_name;
+")
+```
+
+## Verify Connection
+
+```{r}
+# Check available tables
+dbListTables(con)
+
+# Retrieve all tables specifically within the "project3" schema
+# This confirms that our project tables (jobs, skills, job_skills) are correctly loaded
+# and avoids listing unrelated system tables
+dbGetQuery(con, "
+SELECT table_schema, table_name
+FROM information_schema.tables
+WHERE table_schema = 'project3'
+ORDER BY table_name;
+")
+```
+
+## Skill Demand Analysis
+
+```{r}
+# Query the database to count how many job postings require each skill
+# COUNT(DISTINCT js.job_id) ensures each job is counted only once per skill
+skills_demand <- dbGetQuery(con, "
+SELECT
+    s.skill_name,
+    COUNT(DISTINCT js.job_id) AS job_count
+FROM project3.job_skills js
+JOIN project3.skills s
+    ON js.skill_id = s.skill_id
+GROUP BY s.skill_name
+ORDER BY job_count DESC;
+")
+
+# Convert job_count from integer64 (database type) to numeric for compatibility with R and plotting
+skills_demand <- skills_demand %>%
+  mutate(job_count = as.numeric(job_count))
+
+
+skills_demand
+```
+
+## Visualization: Demand by Skill
+
+```{r}
+ggplot(skills_demand, aes(x = reorder(skill_name, job_count), y = job_count)) +
+  geom_col(fill = "orange") +
+  coord_flip() +
+  labs(
+    title = "Demand by Top Data Science Skills",
+    x = "Skill",
+    y = "Number of Job Postings"
+  )
+```
+
+## Salary Analysis by Skill
+
+```{r}
+# Calculate the average salary associated with each skill
+# This links job postings with salary information to estimate the market value of each skill
+skills_salary <- dbGetQuery(con, "
+SELECT
+    s.skill_name,
+    ROUND(AVG(j.avg_salary), 2) AS avg_salary
+FROM project3.job_skills js
+JOIN project3.jobs j
+    ON js.job_id = j.job_id
+JOIN project3.skills s
+    ON js.skill_id = s.skill_id
+GROUP BY s.skill_name
+ORDER BY avg_salary DESC;
+")
+
+# Select the top 8 highest-paying skills for clearer comparison
+skills_salary_top <- skills_salary %>%
+  slice_max(avg_salary, n = 8)
+
+
+skills_salary_top
+```
+
+## Visualization: Salary by Skill
+
+```{r}
+combined <- skills_demand %>%
+  inner_join(skills_salary, by = "skill_name")
+
+ggplot(combined, aes(x = job_count, y = avg_salary, label = skill_name)) +
+  geom_point(color = "orange", size = 3) +
+  geom_text(nudge_y = 0.3, size = 3) +
+  labs(
+    title = "Demand vs Salary for Data Science Skills",
+    x = "Number of Job Postings",
+    y = "Average Salary"
+  )
+```
+
+**Plot interpretation:**
+
+This plot compares the demand for data science skills with their corresponding average salaries. The results show that higher demand does not necessarily translate to higher pay.
+
+For example, Python and SQL appear among the most frequently requested skills, but their average salaries are relatively moderate compared to more specialized skills. In contrast, tools such as Power BI and NLP show higher average salaries despite lower demand, suggesting that niche or specialized skills may command a salary premium.
+
+Overall, the relationship between demand and salary is not strictly linear. Core skills are widely required across many roles, while more specialized skills tend to be less common but offer higher compensation.
+
+## Skill Demand by Sector Analysis
+
+```{r}
+# Retrieve skill demand by sector from the database
+# Each row represents how many job postings in a sector require a given skill
+skills_sector <- dbGetQuery(con, "
+SELECT
+    j.sector,
+    s.skill_name,
+    COUNT(DISTINCT j.job_id) AS job_count
+FROM project3.job_skills js
+JOIN project3.jobs j
+    ON js.job_id = j.job_id
+JOIN project3.skills s
+    ON js.skill_id = s.skill_id
+WHERE j.sector IS NOT NULL
+AND j.sector <> '-1'
+GROUP BY j.sector, s.skill_name
+ORDER BY j.sector, job_count DESC;
+")
+
+# Convert job_count to numeric for compatibility with R operations and plotting
+skills_sector <- skills_sector %>%
+  mutate(job_count = as.numeric(job_count))
+
+# Select three major sectors for focused comparison
+top_sectors <- skills_sector %>%
+  filter(sector %in% c("Information Technology", "Finance", "Health Care"))
+
+# Calculate percentage of skill mentions within each sector
+# This normalizes differences in total job counts across sectors
+top_skills_sector <- top_sectors %>%
+  group_by(sector) %>%
+  mutate(percent = job_count / sum(job_count) * 100) %>%
+  slice_max(percent, n = 5) %>%
+  ungroup()
+
+
+top_skills_sector
+
+# Create separate datasets for each sector (needed for plotting)
+finance_skills <- top_skills_sector %>%
+  filter(sector == "Finance")
+
+health_skills <- top_skills_sector %>%
+  filter(sector == "Health Care")
+
+it_skills <- top_skills_sector %>%
+  filter(sector == "Information Technology")
+```
+
+## Visualization: Skill Demand by Sector
+
+```{r}
+# Finance
+p1 <- ggplot(finance_skills, aes(x = reorder(skill_name, percent), y = percent)) +
+  geom_col(fill = "green") +
+  coord_flip() +
+  ylim(0, 15) +
+  labs(
+    title = "Top Skills in Finance",
+    x = "Skill",
+    y = "   
+    Percentage of Skill 
+    Mentions"
+  ) +
+  theme_minimal()
+
+# HealthCare
+p2 <- ggplot(health_skills, aes(x = reorder(skill_name, percent), y = percent)) +
+  geom_col(fill = "red") +
+  coord_flip() +
+  labs(
+    title = "Top Skills in Health Care",
+    x = "Skill",
+    y = "   
+    Percentage of Skill
+    Mentions"
+  ) +
+  theme_minimal()
+
+# IT
+p3 <- ggplot(it_skills, aes(x = reorder(skill_name, percent), y = percent)) +
+  geom_col(fill = "lightblue") +
+  coord_flip() +
+  labs(
+    title = "Top Skills in Information Technology",
+    x = "Skill",
+    y = "    
+    Percentage of Skill 
+    Mentions"
+  ) +
+  theme_minimal()
+p1 | p2 | p3
+```
+
+## Conclusion
+
+Based on the Glassdoor dataset analyzed, which was transformed into a relational database using SQL, core data science skills, particularly Python, SQL, machine learning, and statistical analysis, consistently emerge as the most in-demand. These skills appear across multiple salary levels and industry sectors represented in the dataset, indicating that their value is consistently recognized across different roles and domains.
+
+While these core skills dominate, other tools such as R and Excel appear more context-dependent. R is present in the dataset but does not consistently rank among the top skills across salary levels or sectors, suggesting it is more specialized. Excel, on the other hand, appears more frequently in business-oriented roles and lower to mid salary ranges, indicating its role as a supporting tool rather than a core technical requirement.
+
+Overall, the findings suggest that a strong foundation in key programming and analytical skills forms a reliable “value pack” for data scientists. This core skill set remains relevant from entry-level to senior positions, while additional tools contribute to specialization depending on industry and role requirements.
