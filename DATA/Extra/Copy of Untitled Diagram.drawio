@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.4">
+  <diagram name="Page-1" id="MY5LiR6iEJe__aq93xC4">
+    <mxGraphModel dx="1018" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HFLIm3tF-kO1ESgjHxgZ-4" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Jobs&amp;nbsp;" vertex="1">
+          <mxGeometry height="250" width="230" x="50" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="HFLIm3tF-kO1ESgjHxgZ-5" parent="HFLIm3tF-kO1ESgjHxgZ-4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;span&gt;job_id (PK)&lt;/span&gt;&lt;br&gt;&lt;span&gt;job_title&lt;/span&gt;&lt;br&gt;&lt;span&gt;rating&lt;/span&gt;&lt;br&gt;&lt;span&gt;company_name&lt;/span&gt;&lt;br&gt;&lt;span&gt;location&lt;/span&gt;&lt;br&gt;&lt;span&gt;type_of_ownership&lt;/span&gt;&lt;br&gt;&lt;span&gt;industry&lt;/span&gt;&lt;br&gt;&lt;span&gt;sector&lt;/span&gt;&lt;br&gt;&lt;span&gt;min_salary&lt;/span&gt;&lt;br&gt;&lt;span&gt;max_salary&lt;/span&gt;&lt;br&gt;&lt;span&gt;avg_salary&lt;/span&gt;&lt;br&gt;&lt;span&gt;job_state&lt;/span&gt;&lt;br&gt;&lt;span&gt;company_age&lt;/span&gt;&lt;br&gt;&lt;span&gt;job_simp&lt;/span&gt;" vertex="1">
+          <mxGeometry height="220" width="230" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HFLIm3tF-kO1ESgjHxgZ-8" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Jobs_Skills" vertex="1">
+          <mxGeometry height="90" width="140" x="310" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="HFLIm3tF-kO1ESgjHxgZ-10" parent="HFLIm3tF-kO1ESgjHxgZ-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Skills_ID" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HFLIm3tF-kO1ESgjHxgZ-11" parent="HFLIm3tF-kO1ESgjHxgZ-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Job_ID" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HFLIm3tF-kO1ESgjHxgZ-12" edge="1" parent="1" source="HFLIm3tF-kO1ESgjHxgZ-5" style="endArrow=none;html=1;rounded=0;entryX=0.164;entryY=-0.022;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.622;exitY=1.005;exitDx=0;exitDy=0;exitPerimeter=0;" target="HFLIm3tF-kO1ESgjHxgZ-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="370" as="sourcePoint" />
+            <mxPoint x="450" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFLIm3tF-kO1ESgjHxgZ-13" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Skills" vertex="1">
+          <mxGeometry height="90" width="140" x="520" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HFLIm3tF-kO1ESgjHxgZ-14" parent="HFLIm3tF-kO1ESgjHxgZ-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Skill_ID (PK)" vertex="1">
+          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HFLIm3tF-kO1ESgjHxgZ-15" parent="HFLIm3tF-kO1ESgjHxgZ-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Skill_name" vertex="1">
+          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HFLIm3tF-kO1ESgjHxgZ-17" edge="1" parent="1" source="HFLIm3tF-kO1ESgjHxgZ-8" style="endArrow=none;html=1;rounded=0;exitX=0.564;exitY=-0.044;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.293;entryY=1.133;entryDx=0;entryDy=0;entryPerimeter=0;" target="HFLIm3tF-kO1ESgjHxgZ-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="370" as="sourcePoint" />
+            <mxPoint x="557.94" y="200.99" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
